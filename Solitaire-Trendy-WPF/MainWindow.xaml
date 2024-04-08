@@ -6,7 +6,11 @@
         xmlns:local="clr-namespace:Solitaire_Trendy_WPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Canvas x:Name="cvnBackground">
+        <Button x:Name="btnStart" Content="Start" Height="72" Canvas.Left="328" Canvas.Top="217" Width="144" FontSize="18"/>
+        <Label x:Name="lblNome" Content="Name:" Height="28" Canvas.Left="328" Canvas.Top="120" Width="144"/>
+        <TextBlock x:Name="txbName" Height="30" Canvas.Left="328" TextWrapping="Wrap" Text="ins..name" Canvas.Top="166" Width="144"/>
+        <Label x:Name="lblTitle" Content="Solitaire Trendy" Height="79" Canvas.Left="162" Canvas.Top="10" Width="476" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="48" FontWeight="Bold" FontFamily="Algerian"/>
 
-    </Grid>
+    </Canvas>
 </Window>

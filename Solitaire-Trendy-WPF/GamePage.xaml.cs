@@ -16,12 +16,11 @@ using System.Windows.Shapes;
 namespace Solitaire_Trendy_WPF
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Logica di interazione per GamePage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class GamePage : Page
     {
-        public Match _match;
-        public MainWindow()
+        public GamePage()
         {
             InitializeComponent();
         }
