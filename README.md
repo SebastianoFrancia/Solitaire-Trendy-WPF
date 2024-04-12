@@ -2,7 +2,7 @@
 solitaire card game, programme written in C# and WPF graphics 
 ## Analisi
 ### Classi
-![imagine at >](.Source/image-class-diagrampng.png) 
+![imagine at <>](.Source/image-class-diagrampng.png) 
 - Carta
     - seme
     - valore della carta
