@@ -2,6 +2,7 @@
 solitaire card game, programme written in C# and WPF graphics 
 ## Analisi
 ### Classi
+![imagine at >](.Source/image-class-diagrampng.png) 
 - Carta
     - seme
     - valore della carta
@@ -41,3 +42,6 @@ Lo scopo del Solitario è spostare tutte le carte sulle basi una per ogni seme i
 Le carte nella parte destra dello schermo sono disposte in colonne, dove per ognuna di esse abbiamo un mazzetto con lo stesso numero di carte pari alla sua posizione.
 Bisognerà spostare l’ultima carta del mazzo che sara visibile nelle basi o nelle colonne in modo che la carta precedente sia di seme diverso e di valore maggiore.
 In caso una delle colonne sia vuota è possibile posizionarsi qualsiasi carta o scala(in ordine decrescente). 
+
+# Mockup
+[Figma mockup](https://www.figma.com/file/bw8lFJlJu9a8bjboqY78Od/Untitled?type=design&node-id=0%3A1&mode=design&t=RwEZo4qeLcdU5bsA-1)
