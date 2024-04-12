@@ -40,9 +40,9 @@ namespace Solitaire_Trendy_WPF
             }
         }
 
-        public bool MoveCard(Card card)
+        public bool MoveCard(Card card,int )
         {
-
+            
         }
 
     }
