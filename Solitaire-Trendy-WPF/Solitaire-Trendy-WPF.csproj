@@ -8,4 +8,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Solitaire-Trendy-Lib\Solitaire-Trendy-Lib.csproj" />
+  </ItemGroup>
+
 </Project>

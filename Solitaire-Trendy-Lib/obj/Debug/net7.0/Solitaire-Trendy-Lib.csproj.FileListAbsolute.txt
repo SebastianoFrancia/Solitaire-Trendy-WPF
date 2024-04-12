@@ -1,0 +1,5 @@
+C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-Lib\obj\Debug\net7.0\Solitaire-Trendy-Lib.csproj.AssemblyReference.cache
+C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-Lib\obj\Debug\net7.0\Solitaire-Trendy-Lib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-Lib\obj\Debug\net7.0\Solitaire-Trendy-Lib.AssemblyInfoInputs.cache
+C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-Lib\obj\Debug\net7.0\Solitaire-Trendy-Lib.AssemblyInfo.cs
+C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-Lib\obj\Debug\net7.0\Solitaire-Trendy-Lib.csproj.CoreCompileInputs.cache

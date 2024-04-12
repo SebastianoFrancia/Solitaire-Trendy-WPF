@@ -19,3 +19,5 @@ C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\
 C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Debug\net7.0-windows\Solitaire-Trendy-WPF.pdb
 C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Debug\net7.0-windows\Solitaire-Trendy-WPF.genruntimeconfig.cache
 C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Debug\net7.0-windows\ref\Solitaire-Trendy-WPF.dll
+C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Debug\net7.0-windows\FinalPage.g.cs
+C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Debug\net7.0-windows\GamePage.g.cs

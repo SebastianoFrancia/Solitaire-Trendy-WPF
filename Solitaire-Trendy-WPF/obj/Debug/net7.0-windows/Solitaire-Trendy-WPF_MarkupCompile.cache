@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\App.xaml
-11407045341
+3112566092
 
-6364817653
-198-878225571
-MainWindow.xaml;
+51990673674
+199-42449243
+FinalPage.xaml;GamePage.xaml;MainWindow.xaml;
 
-False
+True
 
