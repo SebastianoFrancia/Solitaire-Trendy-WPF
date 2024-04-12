@@ -45,3 +45,4 @@ In caso una delle colonne sia vuota è possibile posizionarsi qualsiasi carta o 
 
 # Mockup
 [Figma mockup](https://www.figma.com/file/bw8lFJlJu9a8bjboqY78Od/Untitled?type=design&node-id=0%3A1&mode=design&t=RwEZo4qeLcdU5bsA-1)
+![image at >](.Source/image-mockup.png)
