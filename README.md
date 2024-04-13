@@ -1,6 +1,12 @@
 # Solitaire Trendy
 solitaire card game, programme written in C# and WPF graphics 
 
+## how to install:
+1. GitHub Clone 🤖
+This method requires Git installed on your computer!
+Open the console and go to the folder where you want to install the program and run the following command: git clone https://github.com/SebastianoFrancia/Solitaire-Trendy-WPF/
+2. Install the zip 📦
+On the page of this repository, click on "Code</>" and click on Download Zip.
 
 ## 🃏 Rules of the game:
 The game is played with an Italian card deck (40 cards: Clubs, Swords, Dinars, Cups).
