@@ -2,7 +2,7 @@
 solitaire card game, programme written in C# and WPF graphics 
 
 
-# 🃏 Rules of the game:
+## 🃏 Rules of the game:
 The game is played with an Italian card deck (40 cards: Clubs, Swords, Dinars, Cups).
 The object of Solitaire is to move all the cards on the bases, one for each suit, in ascending order, starting with the Ace and ending with the King.
 The cards on the right-hand side of the screen are arranged in columns, each of which has a pile of cards corresponding to its position.
