@@ -1,6 +1,6 @@
 # Solitaire Trendy
 solitaire card game, programme written in C# and WPF graphics 
-# Woerk In Progress
+# ⚠️ Woerk In Progress ⚠️
 
 ```
 ██╗    ██╗ ██╗ ██████╗
