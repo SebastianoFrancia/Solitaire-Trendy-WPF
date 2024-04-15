@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "Solitaire-Trendy-WPF/1.0.0": {
+        "dependencies": {
+          "Solitaire-Trendy-Lib": "1.0.0"
+        },
         "runtime": {
           "Solitaire-Trendy-WPF.dll": {}
+        }
+      },
+      "Solitaire-Trendy-Lib/1.0.0": {
+        "runtime": {
+          "Solitaire-Trendy-Lib.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Solitaire-Trendy-WPF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Solitaire-Trendy-Lib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

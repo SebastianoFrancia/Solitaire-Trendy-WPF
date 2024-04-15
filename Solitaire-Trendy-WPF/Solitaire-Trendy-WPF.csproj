@@ -9,6 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="source\background.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="source\background.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Solitaire-Trendy-Lib\Solitaire-Trendy-Lib.csproj" />
   </ItemGroup>
 

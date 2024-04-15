@@ -9,6 +9,11 @@
       Title="GamePage">
 
     <Canvas>
-        
+        <Canvas.Background>
+            <ImageBrush ImageSource="/source/background.png"/>
+        </Canvas.Background>
+        <Button x:Name="btn" Content="Button" Height="120" Canvas.Left="72" Canvas.Top="189" Width="114" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Image Height="114" Canvas.Left="72" Canvas.Top="58" Width="114"/>
+
     </Canvas>
 </Page>

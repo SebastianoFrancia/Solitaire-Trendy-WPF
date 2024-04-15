@@ -5,12 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Solitaire_Trendy_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Solitaire Treandy" Height="450" Width="800">
     <Canvas x:Name="cvnBackground">
-        <Button x:Name="btnStart" Content="Start" Height="72" Canvas.Left="328" Canvas.Top="217" Width="144" FontSize="18"/>
-        <Label x:Name="lblNome" Content="Name:" Height="28" Canvas.Left="328" Canvas.Top="120" Width="144"/>
-        <TextBlock x:Name="txbName" Height="30" Canvas.Left="328" TextWrapping="Wrap" Text="ins..name" Canvas.Top="166" Width="144"/>
-        <Label x:Name="lblTitle" Content="Solitaire Trendy" Height="79" Canvas.Left="162" Canvas.Top="10" Width="476" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="48" FontWeight="Bold" FontFamily="Algerian"/>
+        <Canvas.Background>
+            <ImageBrush ImageSource="/source/background.png"/>
+        </Canvas.Background>
+        <Button x:Name="btnStart" Content="Start" Height="59" Canvas.Left="339" Canvas.Top="217" Width="122" FontSize="36" Background="{x:Null}" BorderBrush="White" BorderThickness="3,3,3,3" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="3,3,3,3">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label x:Name="lblNome" Content="Name:" Height="22" Canvas.Left="331" Canvas.Top="136" Width="144" BorderThickness="2,2,2.9,2" Foreground="White" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top" Padding="0,0,0,0"/>
+        <Label x:Name="lblTitle" Content="Solitaire Trendy" Height="93" Canvas.Left="64" Canvas.Top="10" Width="678" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="72" FontWeight="Bold" FontFamily="Algerian" Foreground="White"/>
+        <TextBox Height="31" Canvas.Left="328" TextWrapping="Wrap" Text="" Canvas.Top="158" Width="144" BorderBrush="White" Background="{x:Null}" HorizontalContentAlignment="Center" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" TextChanged="TextBox_TextChanged" BorderThickness="3,3,3,3">
+            <TextBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
 
     </Canvas>
 </Window>
