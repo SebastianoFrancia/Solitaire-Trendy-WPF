@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Solitaire_Trendy_WPF.Deck">
+    <Position X="3.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAgCAABAAAgEAAIAAABIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Deck.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_cards" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Solitaire_Trendy_WPF.Match">
+    <Position X="1.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAIBAAQCAAAAAAAAQAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Match.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_deck" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Solitaire_Trendy_WPF.Card">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAABAAAAAAAAEIAAAAAgAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Card.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_suit" />
+      <Field Name="_value" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="Solitaire_Trendy_WPF.TypeSuit">
+    <Position X="8.25" Y="4" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAQCAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Card.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Solitaire_Trendy_WPF.TypeValue">
+    <Position X="8.25" Y="2.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Card.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

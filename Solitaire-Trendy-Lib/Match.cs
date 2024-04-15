@@ -10,6 +10,9 @@ namespace Solitaire_Trendy_WPF
         private Deck _deck;
         private string _name;
         private List<Card>[] _gameCards;
+        private List<Card>[] _baseCards;
+        private List<Card> _cardsThrown;
+
 
         public string Name
         {
@@ -25,7 +28,10 @@ namespace Solitaire_Trendy_WPF
         {
             Name = name;
             _deck = new Deck();
+            _cardsThrown = new List<Card>();
             _gameCards = new List<Card>[5];
+            _baseCards = new List<Card>[4];
+
             InitializeGameCards();
         }
 
@@ -39,11 +45,11 @@ namespace Solitaire_Trendy_WPF
                 }
             }
         }
-
+        /*
         public bool MoveCard()
         {
             
-        }
+        }*/
 
     }
 }

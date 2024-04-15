@@ -4,7 +4,6 @@
     "net7.0-windows7.0": {
       "Solitaire-Trendy-Lib/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
         "compile": {
           "bin/placeholder/Solitaire-Trendy-Lib.dll": {}
         },
@@ -93,7 +92,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.314\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.315\\RuntimeIdentifierGraph.json"
       }
     }
   }

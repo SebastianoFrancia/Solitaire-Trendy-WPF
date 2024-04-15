@@ -57,9 +57,9 @@ namespace Solitaire_Trendy_WPF
             return card;
         }
 
-        Random rnd = new Random();
         public void ShuffleCards()
         {
+            Random rnd = new Random();
             for (int i = 0; i < _cards.Count; i++)
             {
                 int randomPosition = rnd.Next(_cards.Count);
