@@ -35,5 +35,10 @@ namespace Solitaire_Trendy_WPF
         {
 
         }
+
+        private void btnStart_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
