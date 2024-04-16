@@ -12,7 +12,7 @@ solitaire card game, programme written in C# and WPF graphics
 ```
 
 
-                                                                                                                                  
+                                                                                                     yoo dawg                             
 
 ## how to install:
 XD
