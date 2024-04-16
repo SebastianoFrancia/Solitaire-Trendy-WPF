@@ -13,16 +13,6 @@ namespace Solitaire_Trendy_WPF
         {
             get { return _cards; }
         }
-        
-        public Card ViewFirstCard
-        {
-            get
-            {
-                if (_cards.Count > 0) throw new Exception("the countreCard is invalid");
-                Card card = _cards[_cards.Count];
-                return card;
-            }
-        }
 
         public bool Empty
         {
@@ -32,10 +22,23 @@ namespace Solitaire_Trendy_WPF
                 return false;
             }
         }
+
+        public Card FishFirstCard
+        {
+            get
+            {
+                Card card = _cards[0];
+                _cards.Remove(_cards[0]);
+                return card;
+            }
+        }
+
         public Deck()
         {
             _cards = GenerateDeck();
+            ShuffleCards();
         }
+
 
         private List<Card> GenerateDeck()
         {
@@ -50,14 +53,7 @@ namespace Solitaire_Trendy_WPF
             return cards;
         }
 
-        public Card FishFirstCard()
-        {
-            Card card = _cards[0];
-            _cards.Remove(_cards[0]);
-            return card;
-        }
-
-        public void ShuffleCards()
+        private void ShuffleCards()
         {
             Random rnd = new Random();
             for (int i = 0; i < _cards.Count; i++)
@@ -68,17 +64,6 @@ namespace Solitaire_Trendy_WPF
                 _cards[i] = tmp;
             }
         }
-
-        public void Shift()
-        {
-            Card temp = _cards[0];
-            for (int i = 0; i < _cards.Count - 1; i++)
-            {
-                _cards[i] = _cards[i + 1];
-            }
-            _cards[_cards.Count - 1] = temp;
-        }
-
 
         public override string ToString()
         {

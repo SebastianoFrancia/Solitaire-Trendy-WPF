@@ -45,8 +45,8 @@ namespace Solitaire_Trendy_WPF
         }
         public Card(TypeSuit suit, int value)
         {
-            _suit = suit;
-            _value = (TypeValue)value;
+            Suit = suit;
+            Value = (TypeValue)value;
         }
 
         public bool IsFigure()

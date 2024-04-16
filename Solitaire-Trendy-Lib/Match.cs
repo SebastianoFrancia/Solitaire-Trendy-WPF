@@ -19,7 +19,7 @@ namespace Solitaire_Trendy_WPF
             get {return _name; }
             set
             {
-                if(value == string.Empty && value.Length < 3) throw new ArgumentException("the name is invalid");
+                if(value == string.Empty || value.Length <= 3) throw new ArgumentException("the name is invalid");
                 _name = value;
             }
         }
@@ -31,25 +31,8 @@ namespace Solitaire_Trendy_WPF
             _cardsThrown = new List<Card>();
             _gameCards = new List<Card>[5];
             _baseCards = new List<Card>[4];
-
-            InitializeGameCards();
         }
 
-        private void InitializeGameCards()
-        {
-            for(int i = 0; i<_gameCards.Length; i++)
-            {
-                for(int j=0;j<i+1;j++)
-                {
-                    _gameCards[i].Add(_deck.FishFirstCard());
-                }
-            }
-        }
-        /*
-        public bool MoveCard()
-        {
-            
-        }*/
 
     }
 }

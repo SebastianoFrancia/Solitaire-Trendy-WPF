@@ -37,5 +37,10 @@ namespace Solitaire_Trendy_WPF
             GamePage page = new GamePage();
             ChangePage(page);
         }
+
+        private void btnStart_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

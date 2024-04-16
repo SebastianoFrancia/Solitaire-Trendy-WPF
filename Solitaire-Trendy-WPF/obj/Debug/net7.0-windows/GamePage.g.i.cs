@@ -61,9 +61,15 @@ namespace Solitaire_Trendy_WPF
                 return;
             }
             _contentLoaded = true;
+<<<<<<< HEAD
             System.Uri resourceLocater = new System.Uri("/Solitaire-Trendy-WPF;V1.0.0.0;component/gamepage.xaml", System.UriKind.Relative);
 
 #line 1 "..\..\..\GamePage.xaml"
+=======
+            System.Uri resourceLocater = new System.Uri("/Solitaire-Trendy-WPF;component/gamepage.xaml", System.UriKind.Relative);
+            
+            #line 1 "..\..\..\GamePage.xaml"
+>>>>>>> 91dffdf5e1bb442ee06d7ffcebfcff0b8d4ac736
             System.Windows.Application.LoadComponent(this, resourceLocater);
 
 #line default
