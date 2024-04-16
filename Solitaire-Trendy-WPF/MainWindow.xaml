@@ -10,16 +10,23 @@
         <Canvas.Background>
             <ImageBrush ImageSource="/source/background.png"/>
         </Canvas.Background>
-        <Button x:Name="btnStart" Content="Start" Height="59" Canvas.Left="339" Canvas.Top="217" Width="122" FontSize="36" Background="{x:Null}" BorderBrush="White" BorderThickness="3,3,3,3" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="3,3,3,3">
+        <Button x:Name="btnStart" Content="Start" Height="59" Canvas.Left="339" Canvas.Top="217" Width="122" FontSize="36" Background="{x:Null}" BorderBrush="White" BorderThickness="3,3,3,3" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="3,3,3,3" Click="btnStart_Click">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="8"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <Label x:Name="lblNome" Content="Name:" Height="22" Canvas.Left="331" Canvas.Top="136" Width="144" BorderThickness="2,2,2.9,2" Foreground="White" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top" Padding="0,0,0,0"/>
-        <Label x:Name="lblTitle" Content="Solitaire Trendy" Height="93" Canvas.Left="64" Canvas.Top="10" Width="678" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="72" FontWeight="Bold" FontFamily="Algerian" Foreground="White"/>
-        <TextBox Height="31" Canvas.Left="328" TextWrapping="Wrap" Text="" Canvas.Top="158" Width="144" BorderBrush="White" Background="{x:Null}" HorizontalContentAlignment="Center" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" TextChanged="TextBox_TextChanged" BorderThickness="3,3,3,3">
+        <Label x:Name="lblName" Content="Name:" Height="22" Canvas.Left="331" Canvas.Top="136" Width="144" BorderThickness="2,2,2.9,2" Foreground="White" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top" Padding="0,0,0,0"/>
+        <Label x:Name="lblTitle" Content="Solitaire Trendy" Height="93" Canvas.Left="64" Canvas.Top="10" Width="678" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="72" FontWeight="Bold" FontFamily="Algerian" Foreground="White">
+            <Label.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#00000000" Offset="1"/>
+                </RadialGradientBrush>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="txtInputName" Height="31" Canvas.Left="328" TextWrapping="Wrap" Text="" Canvas.Top="158" Width="144" BorderBrush="White" Background="{x:Null}" HorizontalContentAlignment="Center" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" BorderThickness="3,3,3,3">
             <TextBox.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="8"/>

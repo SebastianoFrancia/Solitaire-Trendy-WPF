@@ -24,5 +24,10 @@ namespace Solitaire_Trendy_WPF
         {
             InitializeComponent();
         }
+
+        private void btnMazzoGeneraCarte_Click(object sender, RoutedEventArgs e)
+        {
+            Button btnCarta=new Button();
+        }
     }
 }

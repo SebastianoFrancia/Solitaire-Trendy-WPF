@@ -26,14 +26,16 @@ namespace Solitaire_Trendy_WPF
             InitializeComponent();
         }
 
-        public void ChangePage(Window win)
+        public void ChangePage(Page Page)
         {
-            this.Content = win;
+            this.Content = Page;
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
 
+        private void btnStart_Click(object sender, RoutedEventArgs e)
+        {
+            GamePage page = new GamePage();
+            ChangePage(page);
         }
     }
 }

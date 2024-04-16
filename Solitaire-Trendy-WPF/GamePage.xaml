@@ -12,8 +12,21 @@
         <Canvas.Background>
             <ImageBrush ImageSource="/source/background.png"/>
         </Canvas.Background>
-        <Button x:Name="btn" Content="Button" Height="120" Canvas.Left="72" Canvas.Top="189" Width="114" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Image Height="114" Canvas.Left="72" Canvas.Top="58" Width="114"/>
+        <Button Content="Button" Height="30" Canvas.Left="432" Canvas.Top="353" Width="60" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button Content="carta?" Height="80" Canvas.Left="577" Canvas.Top="18" Width="59" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="carta?" Height="80" Canvas.Left="649" Canvas.Top="18" Width="59" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="carta?" Height="80" Canvas.Left="722" Canvas.Top="18" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="carta?" Height="80" Canvas.Left="505" Canvas.Top="18" Width="59" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="carta?" Height="80" Canvas.Left="432" Canvas.Top="18" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="carta?" Height="80" Canvas.Left="169" Canvas.Top="18" Width="59" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button Content="carta?" Height="80" Canvas.Left="241" Canvas.Top="18" Width="59" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button Content="carta?" Height="80" Canvas.Left="97" Canvas.Top="18" Width="59" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button Content="carta?" Height="80" Canvas.Left="24" Canvas.Top="18" Width="60" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button Content="Button" Height="30" Canvas.Left="504" Canvas.Top="353" Width="60" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button Content="Button" Height="30" Canvas.Left="576" Canvas.Top="353" Width="60" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button Content="Button" Height="30" Canvas.Left="649" Canvas.Top="353" Width="60" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button Content="Button" Height="30" Canvas.Left="722" Canvas.Top="353" Width="60" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="btnMazzoGeneraCarte" Content="carta?" Height="80" Canvas.Left="24" Canvas.Top="338" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
     </Canvas>
 </Page>
