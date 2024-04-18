@@ -1,0 +1,9 @@
+//CODICE PER TRASCINARE LIBERAMENETE LA CARTA
+
+XAML
+
+<Canvas Name="canvas" Background="White">
+    <Border Name="card" Width="100" Height="150" Background="LightBlue" Canvas.Left="100" Canvas.Top="100" MouseLeftButtonDown="Card_MouseLeftButtonDown" MouseMove="Card_MouseMove" MouseLeftButtonUp="Card_MouseLeftButtonUp">
+			<TextBlock Text="Carta" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+	</Border>
+</Canvas>
