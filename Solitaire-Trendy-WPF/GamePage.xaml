@@ -12,21 +12,22 @@
         <Canvas.Background>
             <ImageBrush ImageSource="/source/background.png"/>
         </Canvas.Background>
-        <Button Content="Button" Height="30" Canvas.Left="432" Canvas.Top="353" Width="60" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Button Content="carta?" Height="80" Canvas.Left="577" Canvas.Top="18" Width="59" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Button Content="carta?" Height="80" Canvas.Left="649" Canvas.Top="18" Width="59" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Button Content="carta?" Height="80" Canvas.Left="722" Canvas.Top="18" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Button Content="carta?" Height="80" Canvas.Left="505" Canvas.Top="18" Width="59" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Button Content="carta?" Height="80" Canvas.Left="432" Canvas.Top="18" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Button Content="carta?" Height="80" Canvas.Left="169" Canvas.Top="18" Width="59" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Button Content="carta?" Height="80" Canvas.Left="241" Canvas.Top="18" Width="59" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Button Content="carta?" Height="80" Canvas.Left="97" Canvas.Top="18" Width="59" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Button Content="carta?" Height="80" Canvas.Left="24" Canvas.Top="18" Width="60" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Button Content="Button" Height="30" Canvas.Left="504" Canvas.Top="353" Width="60" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Button Content="Button" Height="30" Canvas.Left="576" Canvas.Top="353" Width="60" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Button Content="Button" Height="30" Canvas.Left="649" Canvas.Top="353" Width="60" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Button Content="Button" Height="30" Canvas.Left="722" Canvas.Top="353" Width="60" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="btnSpostamentoCln1" Content="Button" Height="30" Canvas.Left="432" Canvas.Top="353" Width="60" HorizontalAlignment="Center" VerticalAlignment="Top" IsEnabled="False"/>
+        <Button x:Name="btnScala3" Content="carta?" Height="80" Canvas.Left="577" Canvas.Top="18" Width="59" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="btnScala4" Content="carta?" Height="80" Canvas.Left="649" Canvas.Top="18" Width="59" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="btnScala5" Content="carta?" Height="80" Canvas.Left="722" Canvas.Top="18" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="btnScala2" Content="carta?" Height="80" Canvas.Left="505" Canvas.Top="18" Width="59" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="btnScala1" Content="carta?" Height="80" Canvas.Left="432" Canvas.Top="18" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="btnMazzoBase3" Content="carta?" Height="80" Canvas.Left="169" Canvas.Top="18" Width="59" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="btnMazzoBase4" Content="carta?" Height="80" Canvas.Left="241" Canvas.Top="18" Width="59" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="btnMazzoBase2" Content="carta?" Height="80" Canvas.Left="97" Canvas.Top="18" Width="59" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="btnMazzoBase1" Content="carta?" Height="80" Canvas.Left="24" Canvas.Top="18" Width="60" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="btnSpostamentoCln2" Content="Button" Height="30" Canvas.Left="504" Canvas.Top="353" Width="60" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False"/>
+        <Button x:Name="btnSpostamentoCln3" Content="Button" Height="30" Canvas.Left="576" Canvas.Top="353" Width="60" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False"/>
+        <Button x:Name="btnSpostamentoCln4" Content="Button" Height="30" Canvas.Left="649" Canvas.Top="353" Width="60" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False"/>
+        <Button x:Name="btnSpostamentoCln5" Content="Button" Height="30" Canvas.Left="722" Canvas.Top="353" Width="60" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False"/>
         <Button x:Name="btnMazzoGeneraCarte" Content="carta?" Height="80" Canvas.Left="24" Canvas.Top="338" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="btnCarta" Content="carta?" Height="80" Canvas.Left="97" Canvas.Top="338" Width="60" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnCarta_Click"/>
 
     </Canvas>
 </Page>

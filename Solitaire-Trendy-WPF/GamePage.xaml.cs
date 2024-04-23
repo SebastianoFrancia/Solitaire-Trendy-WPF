@@ -23,11 +23,21 @@ namespace Solitaire_Trendy_WPF
         public GamePage()
         {
             InitializeComponent();
+            btnCarta.Visibility = Visibility.Hidden;
         }
 
         private void btnMazzoGeneraCarte_Click(object sender, RoutedEventArgs e)
         {
-            Button btnCarta=new Button();
+            btnCarta.Visibility = Visibility.Visible;
+        }
+
+        private void btnCarta_Click(object sender, RoutedEventArgs e)
+        {
+            btnSpostamentoCln1.IsEnabled = true;
+            btnSpostamentoCln2.IsEnabled = true;
+            btnSpostamentoCln3.IsEnabled = true;
+            btnSpostamentoCln4.IsEnabled = true;
+            btnSpostamentoCln5.IsEnabled = true;
         }
     }
 }
