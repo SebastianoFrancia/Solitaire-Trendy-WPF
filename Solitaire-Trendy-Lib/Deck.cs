@@ -39,7 +39,6 @@ namespace Solitaire_Trendy_WPF
             ShuffleCards();
         }
 
-
         private List<Card> GenerateDeck()
         {
             List<Card> cards = new List<Card>();
@@ -51,6 +50,12 @@ namespace Solitaire_Trendy_WPF
                 }
             }
             return cards;
+        }
+
+        public void ReallocateDeck(List<Card> newDeck)
+        {
+            if(newDeck.Count >= 40)throw new Exception("the deck can't be bigger than 40 cards");
+            _cards = newDeck;
         }
 
         private void ShuffleCards()

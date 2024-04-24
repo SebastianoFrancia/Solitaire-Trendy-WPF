@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 
 namespace Solitaire_Trendy_WPF
@@ -47,6 +48,14 @@ namespace Solitaire_Trendy_WPF
         {
             Suit = suit;
             Value = (TypeValue)value;
+        }
+
+        public int TypeValueToInt()
+        {
+            if (value == TypeValue.jack) return 8;
+            if (value == TypeValue.horse) return 9;
+            if (value == TypeValue.king) return 10;
+            return int.Parse(value.ToString());
         }
 
         public bool IsFigure()
