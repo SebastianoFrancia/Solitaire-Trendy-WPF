@@ -20,10 +20,22 @@ namespace Solitaire_Trendy_WPF
     /// </summary>
     public partial class GamePage : Page
     {
-        public GamePage()
+        private string name;
+        public GamePage(string nome)
         {
             InitializeComponent();
             btnCarta.Visibility = Visibility.Hidden;
+            name = nome;
+            Init();
+        }
+
+        public void Init()
+        {
+            List<Card> base1 = new List<Card>();
+            List<Card> base2 = new List<Card>();
+            List<Card> base3 = new List<Card>();
+            List<Card> base4 = new List<Card>();
+            Match match = new Match(name);
         }
 
         private void btnMazzoGeneraCarte_Click(object sender, RoutedEventArgs e)
