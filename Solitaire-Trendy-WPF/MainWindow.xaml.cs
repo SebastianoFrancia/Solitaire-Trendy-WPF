@@ -34,13 +34,16 @@ namespace Solitaire_Trendy_WPF
 
         private void btnStart_Click(object sender, RoutedEventArgs e)
         {
-            GamePage page = new GamePage();
-            ChangePage(page);
-        }
-
-        private void btnStart_Click(object sender, RoutedEventArgs e)
-        {
-
+            if (txtInputName.Text == "")
+            {
+                lblException.Content = "bisogna insereire un nome";
+                lblException.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                GamePage page = new GamePage(txtInputName.Text);
+                ChangePage(page);
+            }
         }
     }
 }

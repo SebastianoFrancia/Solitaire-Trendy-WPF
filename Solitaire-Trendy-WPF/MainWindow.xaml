@@ -33,6 +33,14 @@
                 </Style>
             </TextBox.Resources>
         </TextBox>
+        <Label x:Name="lblException" Content="" Height="31" Canvas.Left="514" Canvas.Top="158" Width="167" HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Hidden">
+            <Label.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#7FFF0000"/>
+                    <GradientStop Color="#00000000" Offset="1"/>
+                </RadialGradientBrush>
+            </Label.Background>
+        </Label>
 
     </Canvas>
 </Window>
