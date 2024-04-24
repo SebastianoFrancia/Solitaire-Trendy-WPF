@@ -49,6 +49,8 @@ namespace Solitaire_Trendy_WPF
             btnSpostamentoCln2.IsEnabled = true;
             btnSpostamentoCln3.IsEnabled = true;
             btnSpostamentoCln4.IsEnabled = true;
+
+            asodiugyasdeayso8fguaysiduegyaseiufya
             btnSpostamentoCln5.IsEnabled = true;
         }
     }

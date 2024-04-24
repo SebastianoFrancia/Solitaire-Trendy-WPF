@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\daniele.sbrighi\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF.csproj",
+      "projectUniqueName": "C:\\Users\\daniele.sbrighi\\Desktop\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF.csproj",
       "projectName": "Solitaire-Trendy-WPF",
-      "projectPath": "C:\\Users\\daniele.sbrighi\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF.csproj",
+      "projectPath": "C:\\Users\\daniele.sbrighi\\Desktop\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF.csproj",
       "packagesPath": "C:\\Users\\daniele.sbrighi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\daniele.sbrighi\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\obj\\",
+      "outputPath": "C:\\Users\\daniele.sbrighi\\Desktop\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,8 +58,8 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\daniele.sbrighi\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj": {
-              "projectPath": "C:\\Users\\daniele.sbrighi\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj"
+            "C:\\Users\\daniele.sbrighi\\Desktop\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj": {
+              "projectPath": "C:\\Users\\daniele.sbrighi\\Desktop\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj"
             }
           }
         }
