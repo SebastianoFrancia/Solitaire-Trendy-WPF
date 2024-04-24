@@ -50,12 +50,27 @@ namespace Solitaire_Trendy_WPF
             Value = (TypeValue)value;
         }
 
-        public int TypeValueToInt()
+        public int TypeValueToInt
         {
-            if (value == TypeValue.jack) return 8;
-            if (value == TypeValue.horse) return 9;
-            if (value == TypeValue.king) return 10;
-            return int.Parse(value.ToString());
+            get
+            {
+                if (_value == TypeValue.jack) return 8;
+                if (_value == TypeValue.horse) return 9;
+                if (_value == TypeValue.king) return 10;
+                return int.Parse(_value.ToString());
+            }
+        }
+
+        public int TypeSuitToInt
+        {
+            get
+            {
+                if (_suit == TypeSuit.Bastone) return 0;
+                if (_suit == TypeSuit.Coppe) return 1;
+                if (_suit == TypeSuit.Spada) return 2;
+                if (_suit == TypeSuit.Denara) return 3;
+                throw new ArgumentOutOfRangeException("the suit of card is invalid");
+            }
         }
 
         public bool IsFigure()

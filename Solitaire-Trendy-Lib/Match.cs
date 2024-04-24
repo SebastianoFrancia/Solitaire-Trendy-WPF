@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Text;
 
@@ -23,6 +24,8 @@ namespace Solitaire_Trendy_WPF
                 _name = value;
             }
         }
+
+        public Card 
 
         public Match(string name)
         {
@@ -49,35 +52,66 @@ namespace Solitaire_Trendy_WPF
                 _cardsThrown.Clear();
             }
             Card extractedCard = _deck.FishFirstCard;
-            AddThrownCard(extractedCard);
-            return _cardsThrown[_cardsThrown.Count - 1];
-        }
-
-        public void MovCardsToColumnX(int xColumn, Card card)
-        {
-            
-        }
-
-        public bool IsIsertableCardOnBase(Card newCard)
-        {
-            foreach(List<Card> b in _basesCards)
+            bool insertable = IsInsertableCardOnBase(extractedCard);
+            if (!insertable) 
             {
-                Card lastBaseCard = b[b.Count - 1];
-                int valueNextCard = lastBaseCard.TypeValueToInt()+1;
+                AddThrownCard(extractedCard);
+                AddTobase(newCard, i);
+            }
+            return extractedCard;
+        }
+        private void AddTobase(Card card)
+        {
+            _basesCards[card.TypeSuitToInt].Add(card);
+            _cardsThrown.Remove(card);
+        }
+
+
+        public bool IsInsertableCardOnBase(Card newCard)
+        {
+            for(int i=0; i< _basesCards.Length;i++)
+            {
+                Card lastBaseCard = _basesCards[i][_basesCards[i].Count - 1];
+                int valueNextCard = lastBaseCard.TypeValueToInt + 1;
                 Card nextCard = new Card(lastBaseCard.Suit, valueNextCard);
-                if(newCard == nextCard)
+                if (newCard == nextCard)
                 {
                     return true;
-
                 }
             }
             return false;
         }
 
-
-        public void AddTobase(Card card, int based)
+        public void MovCardsToColumnX(int xColumn)
         {
-
+            Card card = 
+            if (xColumn < 0 && xColumn > 0) throw new ArgumentOutOfRangeException("the value of column x is invalid");
+            if(IsInertableCardOnColumn(xColumn,card))
+            {
+                _columnsCards[xColumn].Add(card);
+                _cardsThrown[]
+            }
         }
+
+        public bool IsInertableCardOnColumn(int xColumn, Card card)
+        {
+            if (_columnsCards[xColumn].Count != 0)
+            {
+                Card previousCard = _columnsCards[xColumn][_columnsCards[xColumn].Count - 1];
+                TypeValue nextValueCard = (TypeValue)previousCard.TypeValueToInt + 1;
+                if (previousCard.Suit != card.Suit && card.Value == nextValueCard)
+                {
+                    return true;
+                }
+            }
+            else
+            {
+                if (card.Value == TypeValue.king) return true;
+            }
+            return false;
+        }
+
+
+
     }
 }
