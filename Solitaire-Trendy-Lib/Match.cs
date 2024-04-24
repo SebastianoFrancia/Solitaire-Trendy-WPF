@@ -25,8 +25,13 @@ namespace Solitaire_Trendy_WPF
             }
         }
 
-        public Card 
-
+        public Card TheownCard
+        {
+            get
+            {
+                return _cardsThrown[_cardsThrown.Count -1];
+            }
+        }
         public Match(string name)
         {
             Name = name;
@@ -56,7 +61,7 @@ namespace Solitaire_Trendy_WPF
             if (!insertable) 
             {
                 AddThrownCard(extractedCard);
-                AddTobase(newCard, i);
+                AddTobase(extractedCard);
             }
             return extractedCard;
         }
@@ -84,12 +89,15 @@ namespace Solitaire_Trendy_WPF
 
         public void MovCardsToColumnX(int xColumn)
         {
-            Card card = 
+            Card card = TheownCard;
             if (xColumn < 0 && xColumn > 0) throw new ArgumentOutOfRangeException("the value of column x is invalid");
             if(IsInertableCardOnColumn(xColumn,card))
             {
                 _columnsCards[xColumn].Add(card);
-                _cardsThrown[]
+                _cardsThrown.Remove(TheownCard);
+            }else
+            {
+                throw new ArgumentOutOfRangeException("card can't be add in the column");
             }
         }
 
@@ -110,8 +118,6 @@ namespace Solitaire_Trendy_WPF
             }
             return false;
         }
-
-
 
     }
 }
