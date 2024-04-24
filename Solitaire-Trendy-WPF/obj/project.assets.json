@@ -26,23 +26,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\daniele.sbrighi\\.nuget\\packages\\": {},
+    "C:\\Users\\sebastiano.francia\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\daniele.sbrighi\\Desktop\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF.csproj",
+      "projectUniqueName": "C:\\Users\\sebastiano.francia\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF.csproj",
       "projectName": "Solitaire-Trendy-WPF",
-      "projectPath": "C:\\Users\\daniele.sbrighi\\Desktop\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF.csproj",
-      "packagesPath": "C:\\Users\\daniele.sbrighi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\daniele.sbrighi\\Desktop\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\obj\\",
+      "projectPath": "C:\\Users\\sebastiano.francia\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF.csproj",
+      "packagesPath": "C:\\Users\\sebastiano.francia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sebastiano.francia\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\daniele.sbrighi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sebastiano.francia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -58,8 +58,8 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\daniele.sbrighi\\Desktop\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj": {
-              "projectPath": "C:\\Users\\daniele.sbrighi\\Desktop\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj"
+            "C:\\Users\\sebastiano.francia\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj": {
+              "projectPath": "C:\\Users\\sebastiano.francia\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj"
             }
           }
         }
