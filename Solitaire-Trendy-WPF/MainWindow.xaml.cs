@@ -20,8 +20,8 @@ namespace Solitaire_Trendy_WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        public Match _match;
-        public MainWindow()
+        
+        public MainWindow(string name)
         {
             InitializeComponent();
         }

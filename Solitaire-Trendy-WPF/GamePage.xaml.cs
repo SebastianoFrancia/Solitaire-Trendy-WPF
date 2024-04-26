@@ -20,14 +20,14 @@ namespace Solitaire_Trendy_WPF
     /// </summary>
     public partial class GamePage : Page
     {
-        private string name;
+        public Match _match;
         public GamePage(string nome)
         {
             InitializeComponent();
             btnCarta.Visibility = Visibility.Hidden;
-            name = nome;
+            _match = new Match(nome);
             Init();
-        }
+        } 
 
         public void Init()
         {
@@ -35,7 +35,7 @@ namespace Solitaire_Trendy_WPF
             List<Card> base2 = new List<Card>();
             List<Card> base3 = new List<Card>();
             List<Card> base4 = new List<Card>();
-            Match match = new Match(name);
+            
         }
 
         private void btnMazzoGeneraCarte_Click(object sender, RoutedEventArgs e)
