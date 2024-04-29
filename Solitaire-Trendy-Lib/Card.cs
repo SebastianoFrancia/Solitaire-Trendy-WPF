@@ -26,6 +26,7 @@ namespace Solitaire_Trendy_WPF
     {
         private TypeSuit _suit;
         private TypeValue _value;
+        private Uri _imgPathCard;
 
         public TypeSuit Suit
         {
@@ -45,10 +46,15 @@ namespace Solitaire_Trendy_WPF
                 _value = value;
             }
         }
+
+        public Uri ImagePathCard
+        {
+            get { return _imgPathCard; }
+        }
         /// <summary>
         /// restituisce il nome del file che rapresenta la carta
         /// </summary>
-        public string GetPath
+        public string GetImgName
         {
             get {
                 string fileName = "";
@@ -75,10 +81,22 @@ namespace Solitaire_Trendy_WPF
                 return fileName += ".jpg";
             }
         }
+
         public Card(TypeSuit suit, int value)
         {
             Suit = suit;
             Value = (TypeValue)value;
+            CoverImgCard();
+        }
+
+        public void UncoverImgCard()
+        {
+            _imgPathCard = new Uri($@"source/Cards/{GetImgName}", UriKind.Relative);
+        }
+
+        public void CoverImgCard()
+        {
+            _imgPathCard = new Uri(@"source/Cards/RETRO.jpg", UriKind.Relative);
         }
 
         public int TypeValueToInt

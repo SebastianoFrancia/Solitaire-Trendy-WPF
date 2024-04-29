@@ -12,25 +12,15 @@
         <Canvas.Background>
             <ImageBrush ImageSource="/source/background.png"/>
         </Canvas.Background>
-        <Button x:Name="btnSpostamentoCln1" Content="Button" Height="46" Canvas.Left="473" Canvas.Top="508" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False">
+
+        <!--- Column 0 -->
+        <Button x:Name="btnColumn0" Content="Button" Height="46" Canvas.Left="473" Canvas.Top="508" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False" Click="btnColumn0_Click">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="8"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="btnSpostamentoCln2" Content="Button" Height="46" Canvas.Left="583" Canvas.Top="508" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False"/>
-        <Button x:Name="btnSpostamentoCln3" Content="Button" Height="46" Canvas.Left="694" Canvas.Top="508" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False"/>
-        <Button x:Name="btnSpostamentoCln4" Content="Button" Height="46" Canvas.Left="806" Canvas.Top="508" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False"/>
-        <Button x:Name="btnSpostamentoCln5" Content="Button" Height="46" Canvas.Left="918" Canvas.Top="508" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False" RenderTransformOrigin="-1.667,0.567"/>
-        <Button x:Name="btnDeckFishCard" Content="carta?" Height="124" Canvas.Left="32" Canvas.Top="407" Width="93" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Button x:Name="btnCarta" Content="carta?" Height="124" Canvas.Left="134" Canvas.Top="407" Width="93" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnCarta_Click"/>
-
-
-        <Button x:Name="btnCulomn0" Content="carta?" Height="124" Canvas.Left="41" Canvas.Top="20" Width="93" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Button x:Name="btnCulomn1" Content="carta?" Height="124" Canvas.Left="149" Canvas.Top="20" Width="93" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Button x:Name="btnCulomn2" Content="carta?" Height="124" Canvas.Left="256" Canvas.Top="20" Width="93" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Button x:Name="btnCulomn3" Content="carta?" Height="124" Canvas.Left="364" Canvas.Top="20" Width="93" HorizontalAlignment="Left" VerticalAlignment="Center"/>
 
         <ListBox x:Name="imageListBoxCulomn0" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Canvas.Left="473" Canvas.Top="20" Height="462" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3">
             <ListBox.ItemsPanel>
@@ -40,11 +30,116 @@
             </ListBox.ItemsPanel>
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <Image Source="{Binding}" Width="92" Height="46" Margin="0"/>
+                    <Image Source="{Binding}" Width="92" Height="124" Margin="0"/>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
 
+        <!--- Column 1 -->
+        <Button x:Name="btnColumn1" Content="Button" Height="46" Canvas.Left="583" Canvas.Top="508" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <ListBox x:Name="imageListBoxCulomn1" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Canvas.Left="583" Canvas.Top="20" Height="462" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Vertical"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding}" Width="92" Height="124" Margin="0"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <!--- Column 2 -->
+        <Button x:Name="btnColumn2" Content="Button" Height="46" Canvas.Left="694" Canvas.Top="508" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <ListBox x:Name="imageListBoxCulomn2" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Canvas.Left="694" Canvas.Top="20" Height="462" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Vertical"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding}" Width="92" Height="124" Margin="0"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+
+
+        <!--- Column 3 -->
+        <Button x:Name="btnColumn3" Content="Button" Height="46" Canvas.Left="806" Canvas.Top="508" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <ListBox x:Name="imageListBoxCulomn3" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Canvas.Left="806" Canvas.Top="20" Height="462" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Vertical"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding}" Width="92" Height="124" Margin="0"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <!--- Column 4 -->
+        <Button x:Name="btnColumn4" Content="Button" Height="46" Canvas.Left="918" Canvas.Top="508" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False" RenderTransformOrigin="-1.667,0.567">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+
+        <ListBox x:Name="imageListBoxCulomn4" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Canvas.Left="918" Canvas.Top="20" Height="462" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Vertical"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemTemplate>
+                <DataTemplate >
+                    <Image Source="{Binding}" Width="92" Height="124"  />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <!-- btn estrai -->
+        <Button x:Name="btnDeckFishCard" Content="" Height="124" Canvas.Left="32" Canvas.Top="407" Width="93" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="White" Click="btnDeckFishCard_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="\source\Cards\RETRO.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnCarta" Content="" Height="124" Canvas.Left="134" Canvas.Top="407" Width="93" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnCarta_Click"/>
+
+        <!-- Basi -->
+        <Button x:Name="btnCulomn0" Content="carta?" Height="124" Canvas.Left="41" Canvas.Top="20" Width="92" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button x:Name="btnCulomn1" Content="carta?" Height="124" Canvas.Left="149" Canvas.Top="20" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="btnCulomn2" Content="carta?" Height="124" Canvas.Left="256" Canvas.Top="20" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="btnCulomn3" Content="carta?" Height="124" Canvas.Left="364" Canvas.Top="20" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="Draw :" Height="31" Canvas.Left="26" Canvas.Top="380" Width="65" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
 
     </Canvas>
 </Page>

@@ -26,63 +26,68 @@ namespace Solitaire_Trendy_WPF
             InitializeComponent();
             btnCarta.Visibility = Visibility.Hidden;
             _match = new Match(nome);
-            Init();
 
             imageListBoxCulomn0.ItemsSource = ColumnImage(0);
+            imageListBoxCulomn1.ItemsSource = ColumnImage(1);
+            imageListBoxCulomn2.ItemsSource = ColumnImage(2);
+            imageListBoxCulomn3.ItemsSource = ColumnImage(3);
+            imageListBoxCulomn4.ItemsSource = ColumnImage(4);
         }
 
         public List<BitmapImage> ColumnImage(int columnX)
         {
-            List<Card> Cards = _match.CardsOfColumnX(columnX);
-            List<BitmapImage> listImageOfCards = new List<BitmapImage>();
-            foreach (Card card in Cards)
+            List<BitmapImage> imgListOfCards = new List<BitmapImage>();
+
+            foreach (Card card in _match.CardsOfColumnX(columnX))
             {
-                BitmapImage img = new BitmapImage();
-                img.BeginInit();
-                img.UriSource = new Uri(@$"/source/Cards/{card.GetPath}", UriKind.RelativeOrAbsolute);
-                img.EndInit();
-                listImageOfCards.Add(img);
+                BitmapImage img = GetImageOfCard(card);
+                imgListOfCards.Add(img);
             }
-            return listImageOfCards;
+            return imgListOfCards;
+        }
+
+
+        private BitmapImage GetImageOfCard(Card card)
+        {
+            BitmapImage img = new BitmapImage();
+            img.BeginInit();
+            img.UriSource = card.ImagePathCard;
+            img.EndInit();
+            return img;
         }
 
 
 
-        public void Init()
+        private void btnDeckFishCard_Click(object sender, RoutedEventArgs e)
         {
-            List<Card> base1 = new List<Card>();
-            List<Card> base2 = new List<Card>();
-            List<Card> base3 = new List<Card>();
-            List<Card> base4 = new List<Card>();
+            try
+            {
+                Card extractedCard = _match.CardDraw();
+
+                BitmapImage imgCard = GetImageOfCard(extractedCard);
+                ImageBrush imageBrush = new ImageBrush(imgCard);
+                btnCarta.Background = imageBrush;
+
+                btnCarta.Visibility = Visibility.Visible;
+
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
             
         }
-
-
-        private void btnMazzoGeneraCarte_Click(object sender, RoutedEventArgs e)
-        {
-            btnCarta.Visibility = Visibility.Visible;
-        }
-
         private void btnCarta_Click(object sender, RoutedEventArgs e)
         {
-            btnSpostamentoCln1.IsEnabled = true;
-            btnSpostamentoCln2.IsEnabled = true;
-            btnSpostamentoCln3.IsEnabled = true;
-            btnSpostamentoCln4.IsEnabled = true;
+            //_match.IsInsertableCardOnBase(_match.LastCardDrawn);
 
-            btnSpostamentoCln5.IsEnabled = true;
+
         }
 
-
-
-        private void btnMazzoBase1_Click(object sender, RoutedEventArgs e)
+        private void btnColumn0_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void btnColumn4Card12_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

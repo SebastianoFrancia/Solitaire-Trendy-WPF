@@ -26,23 +26,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sebastiano.francia\\.nuget\\packages\\": {},
+    "C:\\Users\\xd\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sebastiano.francia\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF.csproj",
+      "projectUniqueName": "C:\\Users\\xd\\Documents\\GitHub\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF.csproj",
       "projectName": "Solitaire-Trendy-WPF",
-      "projectPath": "C:\\Users\\sebastiano.francia\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF.csproj",
-      "packagesPath": "C:\\Users\\sebastiano.francia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sebastiano.francia\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\obj\\",
+      "projectPath": "C:\\Users\\xd\\Documents\\GitHub\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF.csproj",
+      "packagesPath": "C:\\Users\\xd\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\xd\\Documents\\GitHub\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\sebastiano.francia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\xd\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -51,15 +51,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\sebastiano.francia\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj": {
-              "projectPath": "C:\\Users\\sebastiano.francia\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj"
+            "C:\\Users\\xd\\Documents\\GitHub\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj": {
+              "projectPath": "C:\\Users\\xd\\Documents\\GitHub\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj"
             }
           }
         }
@@ -92,7 +91,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.315\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

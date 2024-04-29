@@ -12,7 +12,7 @@ namespace Solitaire_Trendy_WPF
         private string _name;
         private List<Card>[] _columnsCards;
         private List<Card>[] _basesCards;
-        private List<Card> _cardsThrown;
+        private List<Card> _drawnCards;
 
 
         public string Name
@@ -25,12 +25,14 @@ namespace Solitaire_Trendy_WPF
             }
         }
 
-        public Card TheownCard
+        public Card LastCardDrawn
         {
-            get
-            {
-                return _cardsThrown[_cardsThrown.Count -1];
-            }
+            get{ return _drawnCards[_drawnCards.Count -1]; }
+        }
+
+        public List<Card>[] ColumnsCards
+        {
+            get{ return _columnsCards; }
         }
 
         public List<Card> CardsOfColumnX(int ColumnX)
@@ -41,25 +43,51 @@ namespace Solitaire_Trendy_WPF
         {
             Name = name;
             _deck = new Deck();
-            _cardsThrown = new List<Card>();
+            _drawnCards = new List<Card>();
             _columnsCards = new List<Card>[5];
+            InitilizeColumns();
             _basesCards = new List<Card>[4];
+            InitilizeBase();
+        }
+        private void InitilizeColumns()
+        {
+            for(int i=0; i<_columnsCards.Length; i++)
+            {
+                _columnsCards[i] = new List<Card>();
+
+                for (int j=0; j<=i;j++)
+                {
+                    Card extractedCard = _deck.FishFirstCard;
+                    if(j == i)
+                    {
+                        extractedCard.UncoverImgCard();
+                    }
+                    _columnsCards[i].Add(extractedCard);
+                }
+            }
         }
 
+        private void InitilizeBase()
+        {
+            for(int i=0; i<_basesCards.Length; i++)
+            {
+                _basesCards[i] = new List<Card>();
+            }
+        }
         private void AddThrownCard(Card extractedCard)
         {
-            foreach(Card card in _cardsThrown)
+            foreach(Card card in _drawnCards)
             {
                 if (card == extractedCard) throw new ArgumentException("the extractedCard is alrady extracted");
             }
-            _cardsThrown.Add(extractedCard);
+            _drawnCards.Add(extractedCard);
         }
-        public Card ExtractCard()
+        public Card CardDraw()
         {
             if (_deck.Cards.Count == 1)
             {
-                _deck.ReallocateDeck(_cardsThrown);
-                _cardsThrown.Clear();
+                _deck.ReallocateDeck(_drawnCards);
+                _drawnCards.Clear();
             }
             Card extractedCard = _deck.FishFirstCard;
             if (IsInsertableCardOnBase(extractedCard)) 
@@ -70,6 +98,7 @@ namespace Solitaire_Trendy_WPF
             {
                 AddThrownCard(extractedCard);
             }
+            extractedCard.UncoverImgCard();
             return extractedCard;
         }
         /// <summary>
@@ -85,7 +114,11 @@ namespace Solitaire_Trendy_WPF
         public bool IsInsertableCardOnBase(Card newCard)
         {
             int baseValue = newCard.TypeSuitToInt;
-            if (_basesCards[baseValue].Count == 0 && newCard.Value == (TypeValue)1) return true;
+            if (_basesCards[baseValue].Count == 0 )
+            {
+                if (newCard.Value == (TypeValue)1) return true;
+                return false;
+            }
             
             Card lastBaseCard = _basesCards[baseValue][_basesCards[baseValue].Count -1]; // l'utlima carta nella bse dello stesso seme
             int valueNextCard = lastBaseCard.TypeValueToInt + 1;
@@ -103,12 +136,12 @@ namespace Solitaire_Trendy_WPF
         /// <exception cref="ArgumentOutOfRangeException"></exception>
         public void MovCardsToColumnX(int xColumn)
         {
-            Card card = TheownCard;
+            Card card = LastCardDrawn;
             if (xColumn < 0 && xColumn > 0) throw new ArgumentOutOfRangeException("the value of column x is invalid");
             if(IsInertableCardOnColumn(xColumn,card))
             {
                 _columnsCards[xColumn].Add(card);
-                _cardsThrown.Remove(TheownCard);
+                _drawnCards.Remove(LastCardDrawn);
             }else
             {
                 throw new ArgumentOutOfRangeException("card can't be add in the column");

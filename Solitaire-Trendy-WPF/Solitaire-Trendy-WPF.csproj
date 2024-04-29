@@ -11,6 +11,46 @@
   <ItemGroup>
     <None Remove="source\background.png" />
     <None Remove="source\Cards\10A.jpg" />
+    <None Remove="source\Cards\10B.jpg" />
+    <None Remove="source\Cards\10C.jpg" />
+    <None Remove="source\Cards\10D.jpg" />
+    <None Remove="source\Cards\1A.jpg" />
+    <None Remove="source\Cards\1B.jpg" />
+    <None Remove="source\Cards\1C.jpg" />
+    <None Remove="source\Cards\1D.jpg" />
+    <None Remove="source\Cards\2A.jpg" />
+    <None Remove="source\Cards\2B.jpg" />
+    <None Remove="source\Cards\2C.jpg" />
+    <None Remove="source\Cards\2D.jpg" />
+    <None Remove="source\Cards\3A.jpg" />
+    <None Remove="source\Cards\3B.jpg" />
+    <None Remove="source\Cards\3C.jpg" />
+    <None Remove="source\Cards\3D.jpg" />
+    <None Remove="source\Cards\4A.jpg" />
+    <None Remove="source\Cards\4B.jpg" />
+    <None Remove="source\Cards\4C.jpg" />
+    <None Remove="source\Cards\4D.jpg" />
+    <None Remove="source\Cards\5A.jpg" />
+    <None Remove="source\Cards\5B.jpg" />
+    <None Remove="source\Cards\5C.jpg" />
+    <None Remove="source\Cards\5D.jpg" />
+    <None Remove="source\Cards\6A.jpg" />
+    <None Remove="source\Cards\6B.jpg" />
+    <None Remove="source\Cards\6C.jpg" />
+    <None Remove="source\Cards\6D.jpg" />
+    <None Remove="source\Cards\7A.jpg" />
+    <None Remove="source\Cards\7B.jpg" />
+    <None Remove="source\Cards\7C.jpg" />
+    <None Remove="source\Cards\7D.jpg" />
+    <None Remove="source\Cards\8A.jpg" />
+    <None Remove="source\Cards\8B.jpg" />
+    <None Remove="source\Cards\8C.jpg" />
+    <None Remove="source\Cards\8D.jpg" />
+    <None Remove="source\Cards\9A.jpg" />
+    <None Remove="source\Cards\9B.jpg" />
+    <None Remove="source\Cards\9C.jpg" />
+    <None Remove="source\Cards\9D.jpg" />
+    <None Remove="source\Cards\RETRO.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,6 +58,123 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="source\Cards\10A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\10B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\10C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\10D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\1A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\1B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\1C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\1D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\2A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\2B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\2C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\2D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\3A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\3B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\3C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\3D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\4A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\4B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\4C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\4D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\5A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\5B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\5C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\5D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\6A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\6B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\6C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\6D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\7A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\7B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\7C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\7D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\8A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\8B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\8C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\8D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\9A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\9B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\9C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\RETRO.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
