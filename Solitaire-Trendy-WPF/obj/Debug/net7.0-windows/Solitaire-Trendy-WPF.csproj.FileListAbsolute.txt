@@ -58,3 +58,4 @@ C:\Users\daniele.sbrighi\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj
 C:\Users\daniele.sbrighi\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Debug\net7.0-windows\Solitaire-Trendy-WPF.pdb
 C:\Users\daniele.sbrighi\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Debug\net7.0-windows\Solitaire-Trendy-WPF.genruntimeconfig.cache
 C:\Users\daniele.sbrighi\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Debug\net7.0-windows\ref\Solitaire-Trendy-WPF.dll
+C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\bin\Debug\net7.0-windows\source\Cards\10A.jpg

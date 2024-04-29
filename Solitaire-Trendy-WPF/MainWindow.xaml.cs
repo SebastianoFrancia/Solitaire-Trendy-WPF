@@ -21,7 +21,7 @@ namespace Solitaire_Trendy_WPF
     public partial class MainWindow : Window
     {
         
-        public MainWindow(string name)
+        public MainWindow()
         {
             InitializeComponent();
         }
@@ -34,15 +34,15 @@ namespace Solitaire_Trendy_WPF
 
         private void btnStart_Click(object sender, RoutedEventArgs e)
         {
-            if (txtInputName.Text == "")
-            {
-                lblException.Content = "bisogna insereire un nome";
-                lblException.Visibility = Visibility.Visible;
-            }
-            else
+            try
             {
                 GamePage page = new GamePage(txtInputName.Text);
                 ChangePage(page);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ":\ncan't be empty and must be longher than three letters"); //"insert the name"
+
             }
         }
     }

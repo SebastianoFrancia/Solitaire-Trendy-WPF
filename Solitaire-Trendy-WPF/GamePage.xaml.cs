@@ -27,7 +27,26 @@ namespace Solitaire_Trendy_WPF
             btnCarta.Visibility = Visibility.Hidden;
             _match = new Match(nome);
             Init();
-        } 
+
+            imageListBoxCulomn0.ItemsSource = ColumnImage(0);
+        }
+
+        public List<BitmapImage> ColumnImage(int columnX)
+        {
+            List<Card> Cards = _match.CardsOfColumnX(columnX);
+            List<BitmapImage> listImageOfCards = new List<BitmapImage>();
+            foreach (Card card in Cards)
+            {
+                BitmapImage img = new BitmapImage();
+                img.BeginInit();
+                img.UriSource = new Uri(@$"/source/Cards/{card.GetPath}", UriKind.RelativeOrAbsolute);
+                img.EndInit();
+                listImageOfCards.Add(img);
+            }
+            return listImageOfCards;
+        }
+
+
 
         public void Init()
         {
@@ -37,6 +56,7 @@ namespace Solitaire_Trendy_WPF
             List<Card> base4 = new List<Card>();
             
         }
+
 
         private void btnMazzoGeneraCarte_Click(object sender, RoutedEventArgs e)
         {
@@ -51,6 +71,18 @@ namespace Solitaire_Trendy_WPF
             btnSpostamentoCln4.IsEnabled = true;
 
             btnSpostamentoCln5.IsEnabled = true;
+        }
+
+
+
+        private void btnMazzoBase1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnColumn4Card12_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

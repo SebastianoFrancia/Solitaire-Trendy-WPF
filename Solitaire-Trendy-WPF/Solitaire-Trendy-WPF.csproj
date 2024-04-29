@@ -10,10 +10,14 @@
 
   <ItemGroup>
     <None Remove="source\background.png" />
+    <None Remove="source\Cards\10A.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="source\background.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="source\Cards\10A.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

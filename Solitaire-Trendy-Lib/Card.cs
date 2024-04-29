@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Linq;
-using System.Reflection.Emit;
 using System.Text;
+
 
 namespace Solitaire_Trendy_WPF
 {   
@@ -42,6 +43,36 @@ namespace Solitaire_Trendy_WPF
             {
                 if (value < (TypeValue)1 || value > (TypeValue)10) throw new ArgumentOutOfRangeException("valore non accettabile");
                 _value = value;
+            }
+        }
+        /// <summary>
+        /// restituisce il nome del file che rapresenta la carta
+        /// </summary>
+        public string GetPath
+        {
+            get {
+                string fileName = "";
+                
+                fileName += $"{TypeValueToInt}";
+
+                if (_suit == TypeSuit.Bastone)
+                {
+                    fileName += "A";
+                }
+                else if (_suit == TypeSuit.Denara)
+                {
+                    fileName += "B";
+                }
+                else if (_suit == TypeSuit.Spada)
+                {
+                    fileName += "C";
+                }
+                else if (_suit == TypeSuit.Coppe)
+                {
+                    fileName += "D";
+                }
+                else throw new ArgumentException("the card suit isn't initialize");
+                return fileName += ".jpg";
             }
         }
         public Card(TypeSuit suit, int value)

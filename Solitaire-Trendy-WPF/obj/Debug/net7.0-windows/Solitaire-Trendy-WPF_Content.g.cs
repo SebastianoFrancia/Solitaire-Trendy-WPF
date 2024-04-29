@@ -9,5 +9,6 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("source/background.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("source/cards/10a.jpg")]
 
 
