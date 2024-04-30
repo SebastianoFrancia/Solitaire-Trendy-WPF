@@ -27,11 +27,11 @@ namespace Solitaire_Trendy_WPF
             btnCarta.Visibility = Visibility.Hidden;
             _match = new Match(nome);
 
-            imageListBoxCulomn0.ItemsSource = ColumnImage(0);
-            imageListBoxCulomn1.ItemsSource = ColumnImage(1);
-            imageListBoxCulomn2.ItemsSource = ColumnImage(2);
-            imageListBoxCulomn3.ItemsSource = ColumnImage(3);
-            imageListBoxCulomn4.ItemsSource = ColumnImage(4);
+            lbxImageCulomn0.ItemsSource = ColumnImage(0);
+            lbxImageCulomn1.ItemsSource = ColumnImage(1);
+            lbxImageCulomn2.ItemsSource = ColumnImage(2);
+            lbxImageCulomn3.ItemsSource = ColumnImage(3);
+            lbxImageCulomn4.ItemsSource = ColumnImage(4);
         }
 
         public List<BitmapImage> ColumnImage(int columnX)
@@ -85,9 +85,44 @@ namespace Solitaire_Trendy_WPF
         }
 
         private void btnColumn0_Click(object sender, RoutedEventArgs e)
-        {
+        {/*
+            try
+            {
+                if (imageListBoxCulomn1.SelectedItem == null && imageListBoxCulomn0.SelectedItem == null && imageListBoxCulomn0.SelectedItem == null) throw new ArgumentException("you have to selct the card to change the column");
+                
+                if(imageListBoxCulomn1.SelectedItem != null)
+                Card selctedCard = imageListBoxCulomn0.SelectedItem as Card;
+
+            }*/
 
         }
 
+        private void lbxChangeFocusable(object sender, RoutedEventArgs e)
+        {
+            
+
+
+        }
+        /*
+        private void lbxGotFocusColumn0(object sender, MouseEventArgs e)
+        {
+            lbxImageCulomn0.SelectedItem = null;
+        }*/
+
+        private void lbxLostFocusColumn0(object sender, RoutedEventArgs e)
+        {
+            if(btnColumn1.IsFocused || btnColumn2.IsFocused || btnColumn3.IsFocused || btnColumn4.IsFocused)
+            {
+                Card moveCard = 
+                _match.MovCardsToColumnX()
+            }
+            lbxImageCulomn0.SelectedItem = null;
+        }
+
+        private void lbxLostFocusColumn1(object sender, RoutedEventArgs e)
+        {
+            lbxImageCulomn1.SelectedItem = null;
+
+        }
     }
 }

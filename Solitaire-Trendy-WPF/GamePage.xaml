@@ -13,6 +13,17 @@
             <ImageBrush ImageSource="/source/background.png"/>
         </Canvas.Background>
 
+
+        <!-- btn estrai -->
+        <Button x:Name="btnDeckFishCard" Content="" Height="124" Canvas.Left="32" Canvas.Top="407" Width="93" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="White" Click="btnDeckFishCard_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="\source\Cards\RETRO.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnCarta" Content="" Height="124" Canvas.Left="134" Canvas.Top="407" Width="93" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnCarta_Click"/>
+
+
+
         <!--- Column 0 -->
         <Button x:Name="btnColumn0" Content="Button" Height="46" Canvas.Left="473" Canvas.Top="508" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False" Click="btnColumn0_Click">
             <Button.Resources>
@@ -22,7 +33,7 @@
             </Button.Resources>
         </Button>
 
-        <ListBox x:Name="imageListBoxCulomn0" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Canvas.Left="473" Canvas.Top="20" Height="462" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3">
+        <ListBox x:Name="lbxImageCulomn0" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Canvas.Left="473" Canvas.Top="20" Height="462" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3" LostFocus="lbxLostFocusColumn0">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel Orientation="Vertical"/>
@@ -44,7 +55,7 @@
             </Button.Resources>
         </Button>
 
-        <ListBox x:Name="imageListBoxCulomn1" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Canvas.Left="583" Canvas.Top="20" Height="462" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3">
+        <ListBox x:Name="lbxImageCulomn1" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Canvas.Left="583" Canvas.Top="20" Height="462" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3" LostFocus="lbxLostFocusColumn1">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel Orientation="Vertical"/>
@@ -66,7 +77,7 @@
             </Button.Resources>
         </Button>
 
-        <ListBox x:Name="imageListBoxCulomn2" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Canvas.Left="694" Canvas.Top="20" Height="462" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3">
+        <ListBox x:Name="lbxImageCulomn2" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Canvas.Left="694" Canvas.Top="20" Height="462" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel Orientation="Vertical"/>
@@ -90,7 +101,7 @@
             </Button.Resources>
         </Button>
 
-        <ListBox x:Name="imageListBoxCulomn3" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Canvas.Left="806" Canvas.Top="20" Height="462" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3">
+        <ListBox x:Name="lbxImageCulomn3" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Canvas.Left="806" Canvas.Top="20" Height="462" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel Orientation="Vertical"/>
@@ -113,7 +124,7 @@
         </Button>
 
 
-        <ListBox x:Name="imageListBoxCulomn4" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Canvas.Left="918" Canvas.Top="20" Height="462" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3">
+        <ListBox x:Name="lbxImageCulomn4" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Canvas.Left="918" Canvas.Top="20" Height="462" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel Orientation="Vertical"/>
@@ -121,18 +132,11 @@
             </ListBox.ItemsPanel>
             <ListBox.ItemTemplate>
                 <DataTemplate >
-                    <Image Source="{Binding}" Width="92" Height="124"  />
+                    <Image Source="{Binding}" Width="42" Height="124"/>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
 
-        <!-- btn estrai -->
-        <Button x:Name="btnDeckFishCard" Content="" Height="124" Canvas.Left="32" Canvas.Top="407" Width="93" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="White" Click="btnDeckFishCard_Click">
-            <Button.Background>
-                <ImageBrush ImageSource="\source\Cards\RETRO.jpg"/>
-            </Button.Background>
-        </Button>
-        <Button x:Name="btnCarta" Content="" Height="124" Canvas.Left="134" Canvas.Top="407" Width="93" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnCarta_Click"/>
 
         <!-- Basi -->
         <Button x:Name="btnCulomn0" Content="carta?" Height="124" Canvas.Left="41" Canvas.Top="20" Width="92" HorizontalAlignment="Center" VerticalAlignment="Top"/>
