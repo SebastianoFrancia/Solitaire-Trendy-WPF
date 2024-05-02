@@ -85,15 +85,27 @@ namespace Solitaire_Trendy_WPF
         }
 
         private void btnColumn0_Click(object sender, RoutedEventArgs e)
-        {/*
+        {
             try
             {
-                if (imageListBoxCulomn1.SelectedItem == null && imageListBoxCulomn0.SelectedItem == null && imageListBoxCulomn0.SelectedItem == null) throw new ArgumentException("you have to selct the card to change the column");
-                
-                if(imageListBoxCulomn1.SelectedItem != null)
-                Card selctedCard = imageListBoxCulomn0.SelectedItem as Card;
+                if(lbxImageCulomn1.SelectedItem != null)
+                {
+                    _match.MovCardsToColumnX(1, 0, (Card)lbxImageCulomn1.SelectedItem);
+                }
+                if (lbxImageCulomn2.SelectedItem != null)
+                {
+                    _match.MovCardsToColumnX(2, 0, (Card)lbxImageCulomn1.SelectedItem);
+                }
+                if (lbxImageCulomn3.SelectedItem != null)
+                {
+                    _match.MovCardsToColumnX(3, 0, (Card)lbxImageCulomn1.SelectedItem);
+                }
+                if (lbxImageCulomn4.SelectedItem != null)
+                {
+                    _match.MovCardsToColumnX(4,0 , (Card)lbxImageCulomn1.SelectedItem);
+                }
 
-            }*/
+            }catch
 
         }
 
@@ -103,26 +115,48 @@ namespace Solitaire_Trendy_WPF
 
 
         }
-        /*
-        private void lbxGotFocusColumn0(object sender, MouseEventArgs e)
-        {
-            lbxImageCulomn0.SelectedItem = null;
-        }*/
 
         private void lbxLostFocusColumn0(object sender, RoutedEventArgs e)
         {
-            if(btnColumn1.IsFocused || btnColumn2.IsFocused || btnColumn3.IsFocused || btnColumn4.IsFocused)
+            if( !(btnColumn1.IsMouseOver || btnColumn2.IsMouseOver || btnColumn3.IsMouseOver || btnColumn4.IsMouseOver) )
             {
-                Card moveCard = 
-                _match.MovCardsToColumnX()
+                lbxImageCulomn0.SelectedItem = null;
             }
-            lbxImageCulomn0.SelectedItem = null;
+            
+             
         }
 
         private void lbxLostFocusColumn1(object sender, RoutedEventArgs e)
         {
-            lbxImageCulomn1.SelectedItem = null;
+            if (!(btnColumn0.IsMouseOver || btnColumn2.IsMouseOver || btnColumn3.IsMouseOver || btnColumn4.IsMouseOver))
+            {
+                lbxImageCulomn1.SelectedItem = null;
+            }
 
+        }
+
+        private void lbxLostFocusColumn2(object sender, RoutedEventArgs e)
+        {
+            if (!(btnColumn1.IsMouseOver || btnColumn0.IsMouseOver || btnColumn3.IsMouseOver || btnColumn4.IsMouseOver))
+            {
+                lbxImageCulomn2.SelectedItem = null;
+            }
+        }
+
+        private void lbxLostFocusColumn3(object sender, RoutedEventArgs e)
+        {
+            if (!(btnColumn1.IsMouseOver || btnColumn2.IsMouseOver || btnColumn0.IsMouseOver || btnColumn4.IsMouseOver))
+            {
+                lbxImageCulomn3.SelectedItem = null;
+            }
+        }
+
+        private void lbxLostFocusColumn4(object sender, RoutedEventArgs e)
+        {
+            if (!(btnColumn1.IsMouseOver || btnColumn2.IsMouseOver || btnColumn3.IsMouseOver || btnColumn0.IsMouseOver))
+            {
+                lbxImageCulomn4.SelectedItem = null;
+            }
         }
     }
 }

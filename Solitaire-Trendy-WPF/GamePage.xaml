@@ -8,7 +8,7 @@
       d:DesignHeight="600" d:DesignWidth="1066"
       Title="GamePage">
 
-    <Canvas>
+    <Canvas x:Name="frame">
         <Canvas.Background>
             <ImageBrush ImageSource="/source/background.png"/>
         </Canvas.Background>
@@ -25,9 +25,9 @@
 
 
         <!--- Column 0 -->
-        <Button x:Name="btnColumn0" Content="Button" Height="46" Canvas.Left="473" Canvas.Top="508" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False" Click="btnColumn0_Click">
+        <Button x:Name="btnColumn0" Content="1" Focusable="True" Height="46" Width="92" Click="btnColumn0_Click" Foreground="White" BorderThickness="5,5,5,5" Background="#00DDDDDD" BorderBrush="White" FontSize="24" Canvas.Left="473" Canvas.Top="498" >
             <Button.Resources>
-                <Style TargetType="Border">
+                <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="8"/>
                 </Style>
             </Button.Resources>
@@ -47,9 +47,9 @@
         </ListBox>
 
         <!--- Column 1 -->
-        <Button x:Name="btnColumn1" Content="Button" Height="46" Canvas.Left="583" Canvas.Top="508" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False">
+        <Button x:Name="btnColumn1" Content="2" Focusable="True" Height="46" Width="92" Foreground="White" BorderThickness="5,5,5,5" Background="#00DDDDDD" BorderBrush="White" FontSize="24" Canvas.Left="583" Canvas.Top="498">
             <Button.Resources>
-                <Style TargetType="Border">
+                <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="8"/>
                 </Style>
             </Button.Resources>
@@ -69,15 +69,15 @@
         </ListBox>
 
         <!--- Column 2 -->
-        <Button x:Name="btnColumn2" Content="Button" Height="46" Canvas.Left="694" Canvas.Top="508" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False">
+        <Button x:Name="btnColumn2" Content="3" Focusable="True" Height="46" Width="92" Foreground="White" BorderThickness="5,5,5,5" Background="#00DDDDDD" BorderBrush="White" FontSize="24" Canvas.Left="694" Canvas.Top="498">
             <Button.Resources>
-                <Style TargetType="Border">
+                <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="8"/>
                 </Style>
             </Button.Resources>
         </Button>
 
-        <ListBox x:Name="lbxImageCulomn2" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Canvas.Left="694" Canvas.Top="20" Height="462" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3">
+        <ListBox x:Name="lbxImageCulomn2" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Canvas.Left="694" Canvas.Top="20" Height="462" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3" LostFocus="lbxLostFocusColumn2">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel Orientation="Vertical"/>
@@ -93,15 +93,15 @@
 
 
         <!--- Column 3 -->
-        <Button x:Name="btnColumn3" Content="Button" Height="46" Canvas.Left="806" Canvas.Top="508" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False">
+        <Button x:Name="btnColumn3" Content="4" Focusable="True" Height="46" Width="92" Foreground="White" BorderThickness="5,5,5,5" Background="#00DDDDDD" BorderBrush="White" FontSize="24" Canvas.Left="806" Canvas.Top="498">
             <Button.Resources>
-                <Style TargetType="Border">
+                <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="8"/>
                 </Style>
             </Button.Resources>
         </Button>
 
-        <ListBox x:Name="lbxImageCulomn3" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Canvas.Left="806" Canvas.Top="20" Height="462" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3">
+        <ListBox x:Name="lbxImageCulomn3" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Canvas.Left="806" Canvas.Top="20" Height="462" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3" LostFocus="lbxLostFocusColumn3">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel Orientation="Vertical"/>
@@ -115,16 +115,15 @@
         </ListBox>
 
         <!--- Column 4 -->
-        <Button x:Name="btnColumn4" Content="Button" Height="46" Canvas.Left="918" Canvas.Top="508" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False" RenderTransformOrigin="-1.667,0.567">
+        <Button x:Name="btnColumn4" Content="5" Focusable="True" Height="46" Width="92" Foreground="White" BorderThickness="5,5,5,5" Background="#00DDDDDD" BorderBrush="White" FontSize="24" Canvas.Left="918" Canvas.Top="498">
             <Button.Resources>
-                <Style TargetType="Border">
+                <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="8"/>
                 </Style>
             </Button.Resources>
         </Button>
 
-
-        <ListBox x:Name="lbxImageCulomn4" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Canvas.Left="918" Canvas.Top="20" Height="462" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3">
+        <ListBox x:Name="lbxImageCulomn4" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Canvas.Left="918" Canvas.Top="20" Height="462" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="#00ABADB3" LostFocus="lbxLostFocusColumn4">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel Orientation="Vertical"/>

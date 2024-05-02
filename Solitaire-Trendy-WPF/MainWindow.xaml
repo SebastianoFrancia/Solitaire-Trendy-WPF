@@ -18,7 +18,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Label x:Name="lblName" Content="Name:" Height="30" Canvas.Left="426" Canvas.Top="229" Width="144" BorderThickness="2,2,2.9,2" Foreground="White" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top" Padding="0,0,0,0"/>
+        <Label x:Name="lblName" Content="Name:" Height="30" Canvas.Left="426" Canvas.Top="226" Width="144" BorderThickness="2,2,2.9,2" Foreground="White" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top" Padding="0,0,0,0"/>
         <Label x:Name="lblTitle" Content="Solitaire Trendy" Height="120" Canvas.Left="107" Canvas.Top="26" Width="846" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="90" FontWeight="Bold" FontFamily="Algerian" Foreground="White">
             <Label.Background>
                 <RadialGradientBrush>

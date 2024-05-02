@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Data.SqlTypes;
 using System.Linq;
 using System.Text;
@@ -134,18 +135,49 @@ namespace Solitaire_Trendy_WPF
         /// </summary>
         /// <param name="xColumn"></param>
         /// <exception cref="ArgumentOutOfRangeException"></exception>
-        public void MovCardsToColumnX(int xColumn)
+        public void MovDrawnCardsToColumnX(int xColumn, Card card)
         {
-            Card card = LastCardDrawn;
             if (xColumn < 0 && xColumn > 0) throw new ArgumentOutOfRangeException("the value of column x is invalid");
-            if(IsInertableCardOnColumn(xColumn,card))
+            if (card == LastCardDrawn)
             {
+                if (!IsInertableCardOnColumn(xColumn, card)) throw new ArgumentOutOfRangeException("card can't be add in the column");
+                
                 _columnsCards[xColumn].Add(card);
                 _drawnCards.Remove(LastCardDrawn);
-            }else
-            {
-                throw new ArgumentOutOfRangeException("card can't be add in the column");
             }
+            
+        }
+
+        public void MovCardsToColumnX(int fromColumnX, int toColumnX, Card card)
+        {
+            if (_columnsCards[fromColumnX].Contains(card) && 
+                !_columnsCards[toColumnX].Contains(card))
+            {
+                if (!IsInertableCardOnColumn(toColumnX, card)) throw new ArgumentOutOfRangeException("card can't be add in the column");
+
+                if (_columnsCards[toColumnX][_columnsCards[toColumnX].Count - 1] == card)
+                {
+                    _columnsCards[fromColumnX].Remove(card);
+                    _columnsCards[toColumnX].Add(card);
+                }
+                else
+                {
+                    int baseIndexCards = _columnsCards[fromColumnX].IndexOf(card);
+                    if (baseIndexCards < _columnsCards[fromColumnX].Count)
+                    {
+                        for (int i = baseIndexCards; i < _columnsCards[fromColumnX].Count; i++)
+                        {
+                            Card cardToMove = _columnsCards[fromColumnX][i];
+                            _columnsCards[fromColumnX].Remove(cardToMove);
+                            _columnsCards[toColumnX].Add(cardToMove);
+                        }
+                    }
+                    else throw new ArgumentOutOfRangeException("card index is invalid");
+
+                }
+            }
+            else throw new ArgumentOutOfRangeException("card isn't in the columns");
+
         }
 
         public bool IsInertableCardOnColumn(int xColumn, Card card)
