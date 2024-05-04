@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Ud0eQNVXVRYe/XO0ox7Qzk3oOXemHX0IohMRPvz1YU+IYa/P5Q0xSzaxh4VTAKT+OZ2qTVCzC5yQWcjByu48pQ==",
+  "dgSpecHash": "CJcQmGGNHVN8PwsCZfXzwe4F6GPVRYL6UYp7SrPUXX0T4fiBqJTJUbjZTmKPLDVZ4KWHBvtmyfAdu/H+0uDKUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\xd\\Documents\\GitHub\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Io\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.18\\microsoft.windowsdesktop.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\Io\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.18\\microsoft.netcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\Io\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.18\\microsoft.aspnetcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\Io\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.18\\microsoft.netcore.app.host.win-x64.7.0.18.nupkg.sha512"
+  ],
   "logs": []
 }

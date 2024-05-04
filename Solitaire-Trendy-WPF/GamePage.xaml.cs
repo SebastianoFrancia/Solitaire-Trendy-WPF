@@ -27,13 +27,15 @@ namespace Solitaire_Trendy_WPF
             btnCarta.Visibility = Visibility.Hidden;
             _match = new Match(nome);
 
-            lbxImageCulomn0.ItemsSource = ColumnImage(0);
-            lbxImageCulomn1.ItemsSource = ColumnImage(1);
-            lbxImageCulomn2.ItemsSource = ColumnImage(2);
-            lbxImageCulomn3.ItemsSource = ColumnImage(3);
-            lbxImageCulomn4.ItemsSource = ColumnImage(4);
+            lbxImageCulomn0.ItemsSource = _match.CardsOfColumnX(0);
+            lbxImageCulomn1.ItemsSource = _match.CardsOfColumnX(1);
+            lbxImageCulomn2.ItemsSource = _match.CardsOfColumnX(2);
+            lbxImageCulomn3.ItemsSource = _match.CardsOfColumnX(3);
+            //lbxImageCulomn4.ItemsSource = _match.CardsOfColumnX(4);
+            lbxImageCulomn4.ItemsSource = _match.CardsOfColumnX(4);
+            
         }
-
+        /*
         public List<BitmapImage> ColumnImage(int columnX)
         {
             List<BitmapImage> imgListOfCards = new List<BitmapImage>();
@@ -54,7 +56,7 @@ namespace Solitaire_Trendy_WPF
             img.UriSource = card.ImagePathCard;
             img.EndInit();
             return img;
-        }
+        }*/
 
 
 
@@ -64,9 +66,7 @@ namespace Solitaire_Trendy_WPF
             {
                 Card extractedCard = _match.CardDraw();
 
-                BitmapImage imgCard = GetImageOfCard(extractedCard);
-                ImageBrush imageBrush = new ImageBrush(imgCard);
-                btnCarta.Background = imageBrush;
+                btnCarta.Background = new ImageBrush(extractedCard.ImageCard);
 
                 btnCarta.Visibility = Visibility.Visible;
 
@@ -77,35 +77,38 @@ namespace Solitaire_Trendy_WPF
 
             
         }
-        private void btnCarta_Click(object sender, RoutedEventArgs e)
-        {
-            //_match.IsInsertableCardOnBase(_match.LastCardDrawn);
-
-
-        }
+        
 
         private void btnColumn0_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                if(lbxImageCulomn1.SelectedItem != null)
+                
+                if (lbxImageCulomn1.SelectedItem != null)
                 {
                     _match.MovCardsToColumnX(1, 0, (Card)lbxImageCulomn1.SelectedItem);
                 }
-                if (lbxImageCulomn2.SelectedItem != null)
-                {
-                    _match.MovCardsToColumnX(2, 0, (Card)lbxImageCulomn1.SelectedItem);
+                else if (lbxImageCulomn2.SelectedItem != null)
+                {   
+                    _match.MovCardsToColumnX(2, 0, (Card)lbxImageCulomn2.SelectedItem);
                 }
-                if (lbxImageCulomn3.SelectedItem != null)
-                {
-                    _match.MovCardsToColumnX(3, 0, (Card)lbxImageCulomn1.SelectedItem);
+                else if (lbxImageCulomn3.SelectedItem != null)
+                {   
+                    _match.MovCardsToColumnX(3, 0, (Card)lbxImageCulomn3.SelectedItem);
                 }
-                if (lbxImageCulomn4.SelectedItem != null)
+                else if (lbxImageCulomn4.SelectedItem != null)
                 {
-                    _match.MovCardsToColumnX(4,0 , (Card)lbxImageCulomn1.SelectedItem);
+                    _match.MovCardsToColumnX(4, 0, (Card)lbxImageCulomn4.SelectedItem);
+                }else
+                {
+                    throw new Exception("therisn't selected card in listboxs");
                 }
 
-            }catch
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
 
@@ -122,7 +125,6 @@ namespace Solitaire_Trendy_WPF
             {
                 lbxImageCulomn0.SelectedItem = null;
             }
-            
              
         }
 
@@ -157,6 +159,11 @@ namespace Solitaire_Trendy_WPF
             {
                 lbxImageCulomn4.SelectedItem = null;
             }
+        }
+
+        private void btnCarta_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

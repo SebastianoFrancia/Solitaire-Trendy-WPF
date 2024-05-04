@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlTypes;
 using System.Linq;
 using System.Text;
+using System.Windows.Media.Imaging;
 
 
 namespace Solitaire_Trendy_WPF
@@ -47,9 +48,16 @@ namespace Solitaire_Trendy_WPF
             }
         }
 
-        public Uri ImagePathCard
+        public BitmapImage ImageCard
         {
-            get { return _imgPathCard; }
+            get 
+            {
+                BitmapImage img = new BitmapImage();
+                img.BeginInit();
+                img.UriSource = _imgPathCard;
+                img.EndInit();
+                return img;
+            }
         }
         /// <summary>
         /// restituisce il nome del file che rapresenta la carta

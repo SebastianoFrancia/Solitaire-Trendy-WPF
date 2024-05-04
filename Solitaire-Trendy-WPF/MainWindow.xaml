@@ -23,7 +23,7 @@
             <Label.Background>
                 <RadialGradientBrush>
                     <GradientStop Color="Black"/>
-                    <GradientStop Color="#00000000" Offset="0.05"/>
+                    <GradientStop Color="#00000000" Offset="0"/>
                 </RadialGradientBrush>
             </Label.Background>
         </Label>

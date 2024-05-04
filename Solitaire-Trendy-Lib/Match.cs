@@ -21,7 +21,7 @@ namespace Solitaire_Trendy_WPF
             get { return _name; }
             set
             {
-                if (value == string.Empty || value.Length <= 3) throw new ArgumentException("the name is invalid");
+                if (value == string.Empty /*|| value.Length <= 3*/) throw new ArgumentException("the name is invalid");
                 _name = value;
             }
         }
@@ -147,7 +147,18 @@ namespace Solitaire_Trendy_WPF
             }
             
         }
+        /*
+        private bool ThersCardInColumn(int xColumn, Uri cardPath)
+        {
+            foreach (Card card in _columnsCards[xColumn])
+            {
+                if (card.ImagePathCard == cardPath)
+                {
 
+                }
+            }
+        }*/
+        
         public void MovCardsToColumnX(int fromColumnX, int toColumnX, Card card)
         {
             if (_columnsCards[fromColumnX].Contains(card) && 

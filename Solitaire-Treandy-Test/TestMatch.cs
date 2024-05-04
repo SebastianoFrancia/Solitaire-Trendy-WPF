@@ -14,7 +14,7 @@ namespace Solitaire_Treandy_Test
         public void NameWithInvalidValue()
         {
             Assert.ThrowsException<ArgumentException>(() => new Match(""));
-            Assert.ThrowsException<ArgumentException>(() => new Match("lol"));
+            //Assert.ThrowsException<ArgumentException>(() => new Match("lol"));
         }
 
         [TestMethod]
