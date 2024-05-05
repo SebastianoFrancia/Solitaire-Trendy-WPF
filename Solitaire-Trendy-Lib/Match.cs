@@ -26,7 +26,7 @@ namespace Solitaire_Trendy_WPF
             }
         }
 
-        public Card LastCardDrawn
+        public Card LastDrawnCard
         {
             get{ return _drawnCards[_drawnCards.Count -1]; }
         }
@@ -75,6 +75,7 @@ namespace Solitaire_Trendy_WPF
                 _basesCards[i] = new List<Card>();
             }
         }
+
         private void AddThrownCard(Card extractedCard)
         {
             foreach(Card card in _drawnCards)
@@ -83,6 +84,7 @@ namespace Solitaire_Trendy_WPF
             }
             _drawnCards.Add(extractedCard);
         }
+
         public Card CardDraw()
         {
             if (_deck.Cards.Count == 1)
@@ -138,26 +140,15 @@ namespace Solitaire_Trendy_WPF
         public void MovDrawnCardsToColumnX(int xColumn, Card card)
         {
             if (xColumn < 0 && xColumn > 0) throw new ArgumentOutOfRangeException("the value of column x is invalid");
-            if (card == LastCardDrawn)
+            if (card == LastDrawnCard)
             {
                 if (!IsInertableCardOnColumn(xColumn, card)) throw new ArgumentOutOfRangeException("card can't be add in the column");
                 
                 _columnsCards[xColumn].Add(card);
-                _drawnCards.Remove(LastCardDrawn);
+                _drawnCards.Remove(LastDrawnCard);
             }
             
         }
-        /*
-        private bool ThersCardInColumn(int xColumn, Uri cardPath)
-        {
-            foreach (Card card in _columnsCards[xColumn])
-            {
-                if (card.ImagePathCard == cardPath)
-                {
-
-                }
-            }
-        }*/
         
         public void MovCardsToColumnX(int fromColumnX, int toColumnX, Card card)
         {

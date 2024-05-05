@@ -1,45 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\",
+  "WorkspaceRootPath": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|c:\\users\\io\\desktop\\informatica\\solitaire-trendy-wpf\\solitaire-trendy-wpf\\gamepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|c:\\users\\io\\desktop\\informativa\\solitaire-trendy-wpf\\solitaire-trendy-wpf\\gamepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|solutionrelative:gamepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|c:\\users\\io\\desktop\\informatica\\solitaire-trendy-wpf\\solitaire-trendy-wpf\\gamepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|c:\\users\\io\\desktop\\informativa\\solitaire-trendy-wpf\\solitaire-trendy-wpf\\gamepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|solutionrelative:gamepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0096896E-2747-4369-BEE0-B0E2124DDAF6}|..\\Solitaire-Treandy-Test\\Solitaire-Treandy-Test.csproj|c:\\users\\io\\desktop\\informatica\\solitaire-trendy-wpf\\solitaire-treandy-test\\testmatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDB81D57-5C66-46A3-8884-C8E5B600D076}|..\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj|C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\solitaire-trendy-lib\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDB81D57-5C66-46A3-8884-C8E5B600D076}|..\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj|C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\solitaire-trendy-lib\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDB81D57-5C66-46A3-8884-C8E5B600D076}|..\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj|C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\solitaire-trendy-lib\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|c:\\users\\io\\desktop\\informatica\\solitaire-trendy-wpf\\solitaire-trendy-wpf\\finalpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|solutionrelative:finalpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|c:\\users\\io\\desktop\\informatica\\solitaire-trendy-wpf\\solitaire-trendy-wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|c:\\users\\io\\desktop\\informatica\\solitaire-trendy-wpf\\solitaire-trendy-wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|c:\\users\\io\\desktop\\informatica\\solitaire-trendy-wpf\\solitaire-trendy-wpf\\finalpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|solutionrelative:finalpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sebastiano.francia\\AppData\\Local\\SourceServer\\cd2b65b5557bbfce1645bf1b33143a52db8855ff568eb82b388013e9a19fb9d6\\src\\Microsoft.DotNet.Wpf\\src\\PresentationFramework\\System\\Windows\\Markup\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CDB81D57-5C66-46A3-8884-C8E5B600D076}|..\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj|c:\\users\\io\\desktop\\informativa\\solitaire-trendy-wpf\\solitaire-trendy-lib\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,156 +20,46 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 213,
+          "DockedWidth": 1057,
           "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TestMatch.cs",
-              "DocumentMoniker": "C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\Solitaire-Treandy-Test\\TestMatch.cs",
-              "RelativeDocumentMoniker": "..\\Solitaire-Treandy-Test\\TestMatch.cs",
-              "ToolTip": "C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\Solitaire-Treandy-Test\\TestMatch.cs",
-              "RelativeToolTip": "..\\Solitaire-Treandy-Test\\TestMatch.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAOAAAA",
+              "Title": "Match.cs",
+              "DocumentMoniker": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Match.cs",
+              "RelativeDocumentMoniker": "..\\Solitaire-Trendy-Lib\\Match.cs",
+              "ToolTip": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Match.cs",
+              "RelativeToolTip": "..\\Solitaire-Trendy-Lib\\Match.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAuwHQAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T16:02:49.91Z",
+              "WhenOpened": "2024-05-05T13:57:04.491Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "GamePage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\GamePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\GamePage.xaml.cs",
               "RelativeDocumentMoniker": "GamePage.xaml.cs",
-              "ToolTip": "C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\GamePage.xaml.cs",
+              "ToolTip": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\GamePage.xaml.cs",
               "RelativeToolTip": "GamePage.xaml.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAwwCMAAAAMAAAA",
+              "ViewState": "AQIAACIAAAAAAAAAAADwvzwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T15:58:16.131Z",
+              "WhenOpened": "2024-05-05T13:54:14.14Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "GamePage.xaml",
-              "DocumentMoniker": "C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\GamePage.xaml",
+              "DocumentMoniker": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\GamePage.xaml",
               "RelativeDocumentMoniker": "GamePage.xaml",
-              "ToolTip": "C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\GamePage.xaml",
+              "ToolTip": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\GamePage.xaml",
               "RelativeToolTip": "GamePage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-04T16:39:49.017Z",
+              "WhenOpened": "2024-05-05T13:53:37.466Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Card.cs",
-              "DocumentMoniker": "C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Card.cs",
-              "RelativeDocumentMoniker": "..\\Solitaire-Trendy-Lib\\Card.cs",
-              "ToolTip": "C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Card.cs",
-              "RelativeToolTip": "..\\Solitaire-Trendy-Lib\\Card.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T15:58:16.143Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FinalPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\FinalPage.xaml.cs",
-              "RelativeDocumentMoniker": "FinalPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\FinalPage.xaml.cs",
-              "RelativeToolTip": "FinalPage.xaml.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAABYAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T15:58:16.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Match.cs",
-              "DocumentMoniker": "C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Match.cs",
-              "RelativeDocumentMoniker": "..\\Solitaire-Trendy-Lib\\Match.cs",
-              "ToolTip": "C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Match.cs",
-              "RelativeToolTip": "..\\Solitaire-Trendy-Lib\\Match.cs",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAjwFUAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T15:58:16.154Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Deck.cs",
-              "DocumentMoniker": "C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Deck.cs",
-              "RelativeDocumentMoniker": "..\\Solitaire-Trendy-Lib\\Deck.cs",
-              "ToolTip": "C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Deck.cs",
-              "RelativeToolTip": "..\\Solitaire-Trendy-Lib\\Deck.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T15:58:16.154Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-04T15:58:16.156Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAwwBwAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T15:58:16.139Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FinalPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\FinalPage.xaml",
-              "RelativeDocumentMoniker": "FinalPage.xaml",
-              "ToolTip": "C:\\Users\\Io\\Desktop\\informatica\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\FinalPage.xaml",
-              "RelativeToolTip": "FinalPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-04T15:58:16.136Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "XamlReader.cs",
-              "DocumentMoniker": "C:\\Users\\sebastiano.francia\\AppData\\Local\\SourceServer\\cd2b65b5557bbfce1645bf1b33143a52db8855ff568eb82b388013e9a19fb9d6\\src\\Microsoft.DotNet.Wpf\\src\\PresentationFramework\\System\\Windows\\Markup\\XamlReader.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\sebastiano.francia\\AppData\\Local\\SourceServer\\cd2b65b5557bbfce1645bf1b33143a52db8855ff568eb82b388013e9a19fb9d6\\src\\Microsoft.DotNet.Wpf\\src\\PresentationFramework\\System\\Windows\\Markup\\XamlReader.cs",
-              "ToolTip": "C:\\Users\\sebastiano.francia\\AppData\\Local\\SourceServer\\cd2b65b5557bbfce1645bf1b33143a52db8855ff568eb82b388013e9a19fb9d6\\src\\Microsoft.DotNet.Wpf\\src\\PresentationFramework\\System\\Windows\\Markup\\XamlReader.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\sebastiano.francia\\AppData\\Local\\SourceServer\\cd2b65b5557bbfce1645bf1b33143a52db8855ff568eb82b388013e9a19fb9d6\\src\\Microsoft.DotNet.Wpf\\src\\PresentationFramework\\System\\Windows\\Markup\\XamlReader.cs",
-              "ViewState": "AQIAAAECAAAAAAAAAAArwAwCAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T09:26:44.782Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 1057,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

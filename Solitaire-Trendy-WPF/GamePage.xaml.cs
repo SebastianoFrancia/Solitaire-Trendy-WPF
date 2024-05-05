@@ -30,35 +30,10 @@ namespace Solitaire_Trendy_WPF
             lbxImageCulomn0.ItemsSource = _match.CardsOfColumnX(0);
             lbxImageCulomn1.ItemsSource = _match.CardsOfColumnX(1);
             lbxImageCulomn2.ItemsSource = _match.CardsOfColumnX(2);
-            lbxImageCulomn3.ItemsSource = _match.CardsOfColumnX(3);
-            //lbxImageCulomn4.ItemsSource = _match.CardsOfColumnX(4);
+            lbxImageCulomn3.ItemsSource = _match.CardsOfColumnX(3); 
             lbxImageCulomn4.ItemsSource = _match.CardsOfColumnX(4);
             
         }
-        /*
-        public List<BitmapImage> ColumnImage(int columnX)
-        {
-            List<BitmapImage> imgListOfCards = new List<BitmapImage>();
-
-            foreach (Card card in _match.CardsOfColumnX(columnX))
-            {
-                BitmapImage img = GetImageOfCard(card);
-                imgListOfCards.Add(img);
-            }
-            return imgListOfCards;
-        }
-
-
-        private BitmapImage GetImageOfCard(Card card)
-        {
-            BitmapImage img = new BitmapImage();
-            img.BeginInit();
-            img.UriSource = card.ImagePathCard;
-            img.EndInit();
-            return img;
-        }*/
-
-
 
         private void btnDeckFishCard_Click(object sender, RoutedEventArgs e)
         {
@@ -74,10 +49,22 @@ namespace Solitaire_Trendy_WPF
             {
                 MessageBox.Show(ex.Message);
             }
-
-            
         }
-        
+
+        private void btnCarta_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Card drawnCard = _match.LastDrawnCard;
+                if ( _match.IsInsertableCardOnBase(drawnCard) )
+                {
+
+                }    
+            }catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
         private void btnColumn0_Click(object sender, RoutedEventArgs e)
         {
@@ -99,7 +86,7 @@ namespace Solitaire_Trendy_WPF
                 else if (lbxImageCulomn4.SelectedItem != null)
                 {
                     _match.MovCardsToColumnX(4, 0, (Card)lbxImageCulomn4.SelectedItem);
-                }else
+                }else 
                 {
                     throw new Exception("therisn't selected card in listboxs");
                 }
@@ -109,13 +96,6 @@ namespace Solitaire_Trendy_WPF
             {
                 MessageBox.Show(ex.Message);
             }
-
-        }
-
-        private void lbxChangeFocusable(object sender, RoutedEventArgs e)
-        {
-            
-
 
         }
 
@@ -161,9 +141,5 @@ namespace Solitaire_Trendy_WPF
             }
         }
 
-        private void btnCarta_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
     }
 }

@@ -196,6 +196,10 @@
 
         <!-- Basi -->
         <Button x:Name="btnCulomn0" Content="" Height="124" Canvas.Left="41" Canvas.Top="20" Width="92" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#00DDDDDD" BorderBrush="White" BorderThickness="2,2,2,2">
+
+            
+
+
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="8"/>
