@@ -47,6 +47,11 @@ namespace Solitaire_Trendy_WPF
                 _value = value;
             }
         }
+        
+        public Uri imagePathCard
+        {
+            get { return _imgPathCard; }
+        }
 
         public BitmapImage ImageCard
         {
@@ -135,6 +140,16 @@ namespace Solitaire_Trendy_WPF
             if (Value > (TypeValue)7) return true;
             else return false;
         }
+        /*
+        public override bool Equals(object obj)
+        {
+            if (obj != null)
+            {
+                Card card = obj as Card;
+                if (card.Suit == Suit && card.Value == Value) return true;
+            }
+            return false;
+        }*/
         public override string ToString()
         {
             return $"{Value} {Suit}\n";

@@ -28,12 +28,20 @@ namespace Solitaire_Trendy_WPF
 
         public Card LastDrawnCard
         {
-            get{ return _drawnCards[_drawnCards.Count -1]; }
+            get
+            {
+                if (_drawnCards.Count <= 0) throw new ArgumentOutOfRangeException("there isn't selected card");
+                return _drawnCards[_drawnCards.Count -1]; }
         }
 
         public List<Card>[] ColumnsCards
         {
             get{ return _columnsCards; }
+        }
+
+        public List<Card>[] BaseCards
+        {
+            get { return _basesCards; }
         }
 
         public List<Card> CardsOfColumnX(int ColumnX)
@@ -58,8 +66,8 @@ namespace Solitaire_Trendy_WPF
 
                 for (int j=0; j<=i;j++)
                 {
-                    Card extractedCard = _deck.FishFirstCard;
-                    if(j == i)
+                    Card extractedCard = _deck.DrawnFirstCard;
+                    if (j == i)
                     {
                         extractedCard.UncoverImgCard();
                     }
@@ -78,22 +86,19 @@ namespace Solitaire_Trendy_WPF
 
         private void AddThrownCard(Card extractedCard)
         {
-            foreach(Card card in _drawnCards)
-            {
-                if (card == extractedCard) throw new ArgumentException("the extractedCard is alrady extracted");
-            }
+            if (_drawnCards.Contains(extractedCard)) throw new ArgumentException("the extractedCard is alrady extracted");
             _drawnCards.Add(extractedCard);
         }
 
-        public Card CardDraw()
+        public void CardDraw()
         {
-            if (_deck.Cards.Count == 1)
+            if (_deck.Cards.Count == 0)
             {
                 _deck.ReallocateDeck(_drawnCards);
                 _drawnCards.Clear();
             }
-            Card extractedCard = _deck.FishFirstCard;
-            if (IsInsertableCardOnBase(extractedCard)) 
+            Card extractedCard = _deck.DrawnFirstCard;
+            if (IsInsertableCardOnBase(extractedCard))
             {
                 AddTobase(extractedCard);
             }
@@ -102,7 +107,6 @@ namespace Solitaire_Trendy_WPF
                 AddThrownCard(extractedCard);
             }
             extractedCard.UncoverImgCard();
-            return extractedCard;
         }
         /// <summary>
         /// l'indice delle basi è fisso e corrisponde al valore del seme
@@ -113,13 +117,15 @@ namespace Solitaire_Trendy_WPF
             _basesCards[card.TypeSuitToInt].Add(card);
         }
 
-
         public bool IsInsertableCardOnBase(Card newCard)
         {
             int baseValue = newCard.TypeSuitToInt;
             if (_basesCards[baseValue].Count == 0 )
             {
-                if (newCard.Value == (TypeValue)1) return true;
+                if (newCard.Value == (TypeValue)1)
+                {
+                    return true;
+                }
                 return false;
             }
             
@@ -132,37 +138,57 @@ namespace Solitaire_Trendy_WPF
             }
             return false;
         }
+
+        public void MoveLastDrawnCardsToColumnX(int toColumnX)
+        {
+            Card drawnCard = LastDrawnCard;
+            if (!IsIsertableCardOnColumn(toColumnX, drawnCard)) throw new ArgumentOutOfRangeException("card can't be add in the column");
+            _drawnCards.Remove(drawnCard);
+            _columnsCards[toColumnX].Add(drawnCard);
+        }
+
+        public void MoveColumnCardToBase(Card card, int columnX)
+        {
+            if (columnX < 0 && columnX > 4) throw new ArgumentOutOfRangeException("the columnX is invalid");
+            //if (!_columnsCards[columnX].Contains(card)) throw new ArgumentException("the card isn't contains in the column X");
+            //if (_columnsCards[columnX][_columnsCards[columnX].Count - 1] == card) throw new ArgumentException("you can only add the last card of the column to the base");
+            if (card.imagePathCard == new Uri(@"source/Cards/RETRO.jpg", UriKind.Relative)) throw new ArgumentException("you can't coverde card to base");
+            if (!IsInsertableCardOnBase(card)) throw new ArgumentException("you can't insert this card in the column");
+
+            _columnsCards[columnX].Remove(card);
+            AddTobase(card);
+            if (_columnsCards[columnX][_columnsCards[columnX].Count -1].imagePathCard == new Uri(@"source/Cards/RETRO.jpg", UriKind.Relative))
+            {
+                _columnsCards[columnX][_columnsCards[columnX].Count - 1].UncoverImgCard();
+            }
+        }
+
+
         /// <summary>
         /// sposta la carta in una specifica colonna
         /// </summary>
         /// <param name="xColumn"></param>
         /// <exception cref="ArgumentOutOfRangeException"></exception>
-        public void MovDrawnCardsToColumnX(int xColumn, Card card)
+        public void MoveCardsToColumnX(int fromColumnX, int toColumnX, Card card)
         {
-            if (xColumn < 0 && xColumn > 0) throw new ArgumentOutOfRangeException("the value of column x is invalid");
-            if (card == LastDrawnCard)
-            {
-                if (!IsInertableCardOnColumn(xColumn, card)) throw new ArgumentOutOfRangeException("card can't be add in the column");
-                
-                _columnsCards[xColumn].Add(card);
-                _drawnCards.Remove(LastDrawnCard);
-            }
-            
-        }
-        
-        public void MovCardsToColumnX(int fromColumnX, int toColumnX, Card card)
-        {
+            if ((fromColumnX < 0 && fromColumnX > 4) ||
+                (toColumnX < 0 && toColumnX > 4) &&
+                fromColumnX == toColumnX) throw new ArgumentOutOfRangeException("the value of column x is invalid");
+
+            if (card.imagePathCard == new Uri(@"source/Cards/RETRO.jpg", UriKind.Relative)) throw new ArgumentException("the selected card is cover");
+
             if (_columnsCards[fromColumnX].Contains(card) && 
                 !_columnsCards[toColumnX].Contains(card))
             {
-                if (!IsInertableCardOnColumn(toColumnX, card)) throw new ArgumentOutOfRangeException("card can't be add in the column");
+                if (!IsIsertableCardOnColumn(toColumnX, card)) throw new ArgumentOutOfRangeException("card can't be add in the column");
 
-                if (_columnsCards[toColumnX][_columnsCards[toColumnX].Count - 1] == card)
+                // se l'ulima carta della colonna è uguale alla carta selezionata allora la sposto
+                if (_columnsCards[fromColumnX][_columnsCards[fromColumnX].Count - 1] == card)
                 {
                     _columnsCards[fromColumnX].Remove(card);
                     _columnsCards[toColumnX].Add(card);
                 }
-                else
+                else // se invece la carta selezionata non è l'ultima sposto anche tutte le sucessive
                 {
                     int baseIndexCards = _columnsCards[fromColumnX].IndexOf(card);
                     if (baseIndexCards < _columnsCards[fromColumnX].Count)
@@ -182,7 +208,7 @@ namespace Solitaire_Trendy_WPF
 
         }
 
-        public bool IsInertableCardOnColumn(int xColumn, Card card)
+        public bool IsIsertableCardOnColumn(int xColumn, Card card)
         {
             if (_columnsCards[xColumn].Count != 0)
             {

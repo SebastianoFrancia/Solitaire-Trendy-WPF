@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Solitaire-Treandy-Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d62d39ddfef7db3eb4ea065dc09e0113c4fd365")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+101c4cd5b81b76f548abc7123be571637de9f1be")]
 [assembly: System.Reflection.AssemblyProductAttribute("Solitaire-Treandy-Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Solitaire-Treandy-Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

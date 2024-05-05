@@ -23,13 +23,14 @@ namespace Solitaire_Trendy_WPF
             }
         }
 
-        public Card FishFirstCard
+        public Card DrawnFirstCard
         {
             get
             {
-                Card card = _cards[0];
+                if (_cards.Count == 0) throw new ArgumentOutOfRangeException("the deck cards are finished");
+                Card cardDrowned = new Card(_cards[0].Suit, _cards[0].TypeValueToInt);
                 _cards.Remove(_cards[0]);
-                return card;
+                return cardDrowned;
             }
         }
 
@@ -42,9 +43,9 @@ namespace Solitaire_Trendy_WPF
         private List<Card> GenerateDeck()
         {
             List<Card> cards = new List<Card>();
-            for (int i = 0; i < (int)TypeSuit.Coppe; i++)
+            for (int i = 0; i <= (int)TypeSuit.Coppe; i++)
             {
-                for (int j = 1; j < (int)TypeValue.king; j++)
+                for (int j = 1; j <= (int)TypeValue.king; j++)
                 {
                     cards.Add(new Card((TypeSuit)i, j));
                 }
@@ -55,7 +56,11 @@ namespace Solitaire_Trendy_WPF
         public void ReallocateDeck(List<Card> newDeck)
         {
             if(newDeck.Count >= 40)throw new Exception("the deck can't be bigger than 40 cards");
-            _cards = newDeck;
+            _cards.Clear();
+            foreach (Card card in newDeck) 
+            {
+                _cards.Add(card);
+            }
         }
 
         private void ShuffleCards()

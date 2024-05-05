@@ -1,0 +1,109 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj",
+        "projectName": "Solitaire-Trendy-Lib",
+        "projectPath": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF.csproj",
+        "projectName": "Solitaire-Trendy-WPF",
+        "projectPath": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF.csproj",
+        "packagesPath": "C:\\Users\\io\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\io\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0-windows7.0": {
+            "targetAlias": "net7.0-windows",
+            "projectReferences": {
+              "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj": {
+                "projectPath": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.18, 7.0.18]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.18, 7.0.18]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.18, 7.0.18]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.18, 7.0.18]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
