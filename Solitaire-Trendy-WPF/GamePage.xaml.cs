@@ -27,12 +27,7 @@ namespace Solitaire_Trendy_WPF
             btnCarta.Visibility = Visibility.Hidden;
             _match = new Match(nome);
 
-            lbxImageCulomn0.ItemsSource = _match.ColumnsCards[0];
-            lbxImageCulomn1.ItemsSource = _match.ColumnsCards[1];
-            lbxImageCulomn2.ItemsSource = _match.ColumnsCards[2];
-            lbxImageCulomn3.ItemsSource = _match.ColumnsCards[3];
-            lbxImageCulomn4.ItemsSource = _match.ColumnsCards[4];
-
+            UpdateListboxColumnsCard();
             UpdateBaseCardImage();
 
         }
@@ -66,46 +61,61 @@ namespace Solitaire_Trendy_WPF
             }
         }
 
+
+        public void UpdateListboxColumnsCard()
+        {
+            lbxImageCulomn0.ItemsSource = null;
+            lbxImageCulomn0.ItemsSource = _match.ColumnsCards[0];
+
+            lbxImageCulomn1.ItemsSource = null;
+            lbxImageCulomn1.ItemsSource = _match.ColumnsCards[1];
+
+            lbxImageCulomn2.ItemsSource = null;
+            lbxImageCulomn2.ItemsSource = _match.ColumnsCards[2];
+
+            lbxImageCulomn3.ItemsSource = null;
+            lbxImageCulomn3.ItemsSource = _match.ColumnsCards[3];
+
+            lbxImageCulomn4.ItemsSource = null;
+            lbxImageCulomn4.ItemsSource = _match.ColumnsCards[4];
+        }
+
         public void UpdateBtnCard()
         {
-            Card lastDrawnCard = _match.LastDrawnCard;
-            btnCarta.Background = new ImageBrush(lastDrawnCard.ImageCard);
+            if (_match.DrawnCards.Count > 0)
+            {
+                Card lastDrawnCard = _match.LastDrawnCard;
+                btnCarta.Background = new ImageBrush(lastDrawnCard.ImageCard);
+            }
         }
 
         private void btnDeckFishCard_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                _match.CardDraw();
+                bool isAddedToBase = _match.DrawCard();
                 btnCarta.Visibility = Visibility.Visible;
 
-                UpdateBaseCardBtn();
+                UpdateBaseCardImage();
                 UpdateBtnCard();
 
+                while (isAddedToBase)
+                {
+                    isAddedToBase = false;
+                    if (_match.DrawnCards.Count > 0)
+                    {
+                        Card lastDrawnCard = _match.LastDrawnCard;
+                        if (_match.IsInsertableCardOnBase(lastDrawnCard))
+                        {
+                            isAddedToBase = true;
+                            _match.AddCardToBase(lastDrawnCard);
+                        }
+                    }
+                }
             }
             catch(Exception ex)
             {
                 MessageBox.Show($"{ex}");
-            }
-        }
-
-        public void UpdateBaseCardBtn()
-        {
-            if (_match.BaseCards[0].Count > 0) 
-            {
-                btnBase0.Background = new ImageBrush(_match.BaseCards[0][_match.BaseCards[0].Count - 1].ImageCard);
-            }
-            if (_match.BaseCards[1].Count > 0)
-            {
-                btnBase1.Background = new ImageBrush(_match.BaseCards[1][_match.BaseCards[1].Count - 1].ImageCard);
-            }
-            if (_match.BaseCards[2].Count > 0)
-            {
-                btnBase2.Background = new ImageBrush(_match.BaseCards[2][_match.BaseCards[2].Count - 1].ImageCard);
-            }
-            if (_match.BaseCards[3].Count > 0)
-            {
-                btnBase3.Background = new ImageBrush(_match.BaseCards[3][_match.BaseCards[3].Count - 1].ImageCard);
             }
         }
 
@@ -149,6 +159,7 @@ namespace Solitaire_Trendy_WPF
                 lbxImageCulomn0.ItemsSource = null;
                 lbxImageCulomn0.ItemsSource = _match.ColumnsCards[0];
                 UpdateBtnCard();
+                UpdateListboxColumnsCard();
             }
             catch (Exception ex)
             {
@@ -188,6 +199,7 @@ namespace Solitaire_Trendy_WPF
                 lbxImageCulomn1.ItemsSource = null;
                 lbxImageCulomn1.ItemsSource = _match.ColumnsCards[1];
                 UpdateBtnCard();
+                UpdateListboxColumnsCard();
             }
             catch (Exception ex)
             {
@@ -227,6 +239,7 @@ namespace Solitaire_Trendy_WPF
                 lbxImageCulomn2.ItemsSource = null;
                 lbxImageCulomn2.ItemsSource = _match.ColumnsCards[2];
                 UpdateBtnCard();
+                UpdateListboxColumnsCard();
             }
             catch (Exception ex)
             {
@@ -266,6 +279,7 @@ namespace Solitaire_Trendy_WPF
                 lbxImageCulomn3.ItemsSource = null;
                 lbxImageCulomn3.ItemsSource = _match.ColumnsCards[3];
                 UpdateBtnCard();
+                UpdateListboxColumnsCard();
             }
             catch (Exception ex)
             {
@@ -296,6 +310,7 @@ namespace Solitaire_Trendy_WPF
                 else if (lbxImageCulomn4.SelectedItem != null)
                 {
                     _match.MoveCardsToColumnX(0, 4, (Card)lbxImageCulomn0.SelectedItem);
+                    lbxImageCulomn3.SelectedItem = null;
                 }
                 else
                 {
@@ -305,6 +320,7 @@ namespace Solitaire_Trendy_WPF
                 lbxImageCulomn4.ItemsSource = null;
                 lbxImageCulomn4.ItemsSource = _match.ColumnsCards[4];
                 UpdateBtnCard();
+                UpdateListboxColumnsCard();
             }
             catch (Exception ex)
             {
@@ -366,7 +382,7 @@ namespace Solitaire_Trendy_WPF
                 Card insertabelCard;
                 if (lbxImageCulomn0.SelectedItem != null)
                 {
-                    insertabelCard = (Card)lbxImageCulomn0.SelectedItem;
+                    insertabelCard = lbxImageCulomn0.SelectedItem as Card;
                     _match.MoveColumnCardToBase(insertabelCard, 0);
 
                     lbxImageCulomn0.ItemsSource = null;
@@ -374,7 +390,7 @@ namespace Solitaire_Trendy_WPF
                 }
                 else if (lbxImageCulomn1.SelectedItem != null)
                 {
-                    insertabelCard = (Card)lbxImageCulomn1.SelectedItem;
+                    insertabelCard = lbxImageCulomn1.SelectedItem as Card;
                     _match.MoveColumnCardToBase(insertabelCard, 1);
 
                     lbxImageCulomn1.ItemsSource = null;
@@ -382,7 +398,7 @@ namespace Solitaire_Trendy_WPF
                 }
                 else if (lbxImageCulomn2.SelectedItem != null)
                 {
-                    insertabelCard = (Card)lbxImageCulomn2.SelectedItem;
+                    insertabelCard = lbxImageCulomn2.SelectedItem as Card;
                     _match.MoveColumnCardToBase(insertabelCard, 2);
 
                     lbxImageCulomn2.ItemsSource = null;
@@ -390,7 +406,7 @@ namespace Solitaire_Trendy_WPF
                 }
                 else if (lbxImageCulomn3.SelectedItem != null)
                 {
-                    insertabelCard = (Card)lbxImageCulomn3.SelectedItem;
+                    insertabelCard = lbxImageCulomn3.SelectedItem as Card;
                     _match.MoveColumnCardToBase(insertabelCard, 3);
 
                     lbxImageCulomn3.ItemsSource = null;
@@ -398,7 +414,7 @@ namespace Solitaire_Trendy_WPF
                 }
                 else if (lbxImageCulomn4.SelectedItem != null)
                 {
-                    insertabelCard = (Card)lbxImageCulomn4.SelectedItem;
+                    insertabelCard = lbxImageCulomn4.SelectedItem as Card;
                     _match.MoveColumnCardToBase(insertabelCard, 4);
 
                     lbxImageCulomn4.ItemsSource = null;
@@ -407,14 +423,15 @@ namespace Solitaire_Trendy_WPF
                 else
                 {
                     insertabelCard = _match.LastDrawnCard;
-                    _match.MoveColumnCardToBase(insertabelCard, 4);
+                    _match.AddCardToBase(insertabelCard);
                 }
-                UpdateBaseCardBtn();
+                UpdateBaseCardImage();
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                UpdateBaseCardImage();
             }
         }
     }

@@ -150,6 +150,19 @@ namespace Solitaire_Trendy_WPF
             }
             return false;
         }*/
+
+        public override bool Equals(object obj)
+        {
+            if (obj is Card)
+            {
+                Card card = obj as Card;
+                if (card != null)
+                {
+                    if (card.Suit == Suit && card.Value == Value) return true;
+                }
+            }
+            return false;
+        }
         public override string ToString()
         {
             return $"{Value} {Suit}\n";
