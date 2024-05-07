@@ -117,6 +117,7 @@ namespace Solitaire_Trendy_WPF
             {
                 MessageBox.Show($"{ex}");
             }
+            if(_match.DrawnCards.Count == 0) btnCarta.Visibility = Visibility.Collapsed;
         }
 
         public void DeselectListBoxs()
@@ -150,6 +151,7 @@ namespace Solitaire_Trendy_WPF
                 else if (lbxImageCulomn4.SelectedItem != null)
                 {
                     _match.MoveCardsToColumnX(4, 0, (Card)lbxImageCulomn4.SelectedItem);
+                    lbxImageCulomn4.SelectedItem = null;
                 }
                 else
                 {
@@ -172,7 +174,7 @@ namespace Solitaire_Trendy_WPF
         {
             try
             {
-                if (lbxImageCulomn1.SelectedItem != null)
+                if (lbxImageCulomn0.SelectedItem != null)
                 {
                     _match.MoveCardsToColumnX(0, 1, (Card)lbxImageCulomn0.SelectedItem);
                     lbxImageCulomn0.SelectedItem = null;
@@ -190,6 +192,7 @@ namespace Solitaire_Trendy_WPF
                 else if (lbxImageCulomn4.SelectedItem != null)
                 {
                     _match.MoveCardsToColumnX(4, 1, (Card)lbxImageCulomn4.SelectedItem);
+                    lbxImageCulomn4.SelectedItem = null;
                 }
                 else
                 {
@@ -217,7 +220,7 @@ namespace Solitaire_Trendy_WPF
                     _match.MoveCardsToColumnX(1, 2, (Card)lbxImageCulomn1.SelectedItem);
                     lbxImageCulomn1.SelectedItem = null;
                 }
-                else if (lbxImageCulomn2.SelectedItem != null)
+                else if (lbxImageCulomn0.SelectedItem != null)
                 {
                     _match.MoveCardsToColumnX(0, 2, (Card)lbxImageCulomn0.SelectedItem);
                     lbxImageCulomn2.SelectedItem = null;
@@ -230,6 +233,7 @@ namespace Solitaire_Trendy_WPF
                 else if (lbxImageCulomn4.SelectedItem != null)
                 {
                     _match.MoveCardsToColumnX(4, 2, (Card)lbxImageCulomn4.SelectedItem);
+                    lbxImageCulomn4.SelectedItem = null;
                 }
                 else
                 {
@@ -262,7 +266,7 @@ namespace Solitaire_Trendy_WPF
                     _match.MoveCardsToColumnX(2, 3, (Card)lbxImageCulomn2.SelectedItem);
                     lbxImageCulomn2.SelectedItem = null;
                 }
-                else if (lbxImageCulomn3.SelectedItem != null)
+                else if (lbxImageCulomn0.SelectedItem != null)
                 {
                     _match.MoveCardsToColumnX(0, 3, (Card)lbxImageCulomn0.SelectedItem);
                     lbxImageCulomn3.SelectedItem = null;
@@ -270,6 +274,7 @@ namespace Solitaire_Trendy_WPF
                 else if (lbxImageCulomn4.SelectedItem != null)
                 {
                     _match.MoveCardsToColumnX(4, 3, (Card)lbxImageCulomn4.SelectedItem);
+                    lbxImageCulomn4.SelectedItem = null;
                 }
                 else
                 {
@@ -307,10 +312,10 @@ namespace Solitaire_Trendy_WPF
                     _match.MoveCardsToColumnX(3, 4, (Card)lbxImageCulomn3.SelectedItem);
                     lbxImageCulomn3.SelectedItem = null;
                 }
-                else if (lbxImageCulomn4.SelectedItem != null)
+                else if (lbxImageCulomn0.SelectedItem != null)
                 {
                     _match.MoveCardsToColumnX(0, 4, (Card)lbxImageCulomn0.SelectedItem);
-                    lbxImageCulomn3.SelectedItem = null;
+                    lbxImageCulomn0.SelectedItem = null;
                 }
                 else
                 {

@@ -196,7 +196,7 @@ namespace Solitaire_Trendy_WPF
                 (toColumnX < 0 && toColumnX > 4) &&
                 fromColumnX == toColumnX) throw new ArgumentOutOfRangeException("the value of column x is invalid");
 
-            if (card.imagePathCard == new Uri(@"source/Cards/RETRO.jpg", UriKind.Relative)) throw new ArgumentException("the selected card is cover");
+            if (card.imagePathCard == new Uri(@"source/Cards/RETRO.jpg", UriKind.Relative)) throw new ArgumentException("you can't insert coverde card to base");
 
             if (_columnsCards[fromColumnX].Contains(card) && 
                 !_columnsCards[toColumnX].Contains(card))
@@ -218,14 +218,11 @@ namespace Solitaire_Trendy_WPF
                     int baseIndexCards = _columnsCards[fromColumnX].IndexOf(card);
                     if (baseIndexCards < _columnsCards[fromColumnX].Count)
                     {
-                        for (int i = baseIndexCards; i < _columnsCards[fromColumnX].Count; i++)
+                        int nCard = _columnsCards[fromColumnX].Count;
+                        for (int i = baseIndexCards; i < nCard; i++)
                         {
                             Card cardToMove = _columnsCards[fromColumnX][i];
                             _columnsCards[fromColumnX].Remove(cardToMove);
-                            if (_columnsCards[fromColumnX].Count > 0)
-                            {
-                                _columnsCards[fromColumnX][_columnsCards[fromColumnX].Count - 1].UncoverImgCard();
-                            }
                             _columnsCards[toColumnX].Add(cardToMove);
                         }
                     }
@@ -242,7 +239,7 @@ namespace Solitaire_Trendy_WPF
             if (_columnsCards[xColumn].Count != 0)
             {
                 Card previousCard = _columnsCards[xColumn][_columnsCards[xColumn].Count - 1];
-                TypeValue nextValueCard = (TypeValue)previousCard.TypeValueToInt + 1;
+                TypeValue nextValueCard = (TypeValue)previousCard.TypeValueToInt - 1;
                 if (previousCard.Suit != card.Suit && card.Value == nextValueCard)
                 {
                     return true;
