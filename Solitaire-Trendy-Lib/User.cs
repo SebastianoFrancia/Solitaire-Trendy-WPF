@@ -38,7 +38,15 @@ namespace Solitaire_Trendy_WPF
 
         public override bool Equals(object obj)
         {
-            if
+            if ( obj is User)
+													{
+																User user = obj as User
+																if (user != null)
+																{
+																			if (user.Name == Name) retun true
+																}
+													}
+										return false
         }
     }
 }
