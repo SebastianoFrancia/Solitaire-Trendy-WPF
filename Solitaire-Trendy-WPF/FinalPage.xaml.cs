@@ -20,9 +20,17 @@ namespace Solitaire_Trendy_WPF
     /// </summary>
     public partial class FinalPage : Page
     {
-        public FinalPage()
+        private string _name;
+        public FinalPage(string name)
         {
             InitializeComponent();
+            _name = name;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            GamePage page = new GamePage(_name);
+            ((MainWindow)Application.Current.MainWindow).ChangePage(page);
         }
     }
 }

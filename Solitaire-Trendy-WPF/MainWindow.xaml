@@ -34,6 +34,7 @@
                 </Style>
             </TextBox.Resources>
         </TextBox>
+        <Canvas Height="584" Width="1066"/>
 
 
     </Canvas>

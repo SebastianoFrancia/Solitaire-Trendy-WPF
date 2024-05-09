@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace Solitaire_Trendy_WPF
 {
@@ -59,25 +60,43 @@ namespace Solitaire_Trendy_WPF
                 lastCardBase = _match.BaseCards[3][_match.BaseCards[3].Count - 1];
                 btnBase3.Background = new ImageBrush(lastCardBase.ImageCard);
             }
+            UpdateBtnCard();
+            Win();
+            UpdateDrowBtn();
+
         }
 
+        public void UpdateDrowBtn()
+        {
+            if (_match.Deck.Count == 0 && _match.DrawnCards.Count == 0)
+            {
+                btnDrawCardOfDeck.Visibility = Visibility.Collapsed;
+                lblDrawCardsTitle.Visibility = Visibility.Collapsed;
+            }
+        }
 
         public void UpdateListboxColumnsCard()
         {
             lbxImageCulomn0.ItemsSource = null;
             lbxImageCulomn0.ItemsSource = _match.ColumnsCards[0];
+            if (lbxImageCulomn0.Items.Count - 1 > 0) lbxImageCulomn0.ScrollIntoView(lbxImageCulomn0.Items[lbxImageCulomn0.Items.Count - 1]);
+            
 
             lbxImageCulomn1.ItemsSource = null;
             lbxImageCulomn1.ItemsSource = _match.ColumnsCards[1];
+            if (lbxImageCulomn1.Items.Count - 1 > 0)  lbxImageCulomn1.ScrollIntoView(lbxImageCulomn1.Items[lbxImageCulomn1.Items.Count - 1]);
 
             lbxImageCulomn2.ItemsSource = null;
             lbxImageCulomn2.ItemsSource = _match.ColumnsCards[2];
+            if (lbxImageCulomn2.Items.Count - 1 > 0)  lbxImageCulomn2.ScrollIntoView(lbxImageCulomn2.Items[lbxImageCulomn2.Items.Count - 1]);
 
             lbxImageCulomn3.ItemsSource = null;
             lbxImageCulomn3.ItemsSource = _match.ColumnsCards[3];
+            if (lbxImageCulomn3.Items.Count - 1 > 0)  lbxImageCulomn3.ScrollIntoView(lbxImageCulomn3.Items[lbxImageCulomn3.Items.Count - 1]);
 
             lbxImageCulomn4.ItemsSource = null;
             lbxImageCulomn4.ItemsSource = _match.ColumnsCards[4];
+            if (lbxImageCulomn4.Items.Count - 1 > 0)  lbxImageCulomn4.ScrollIntoView(lbxImageCulomn4.Items[lbxImageCulomn4.Items.Count - 1]);
         }
 
         public void UpdateBtnCard()
@@ -87,6 +106,11 @@ namespace Solitaire_Trendy_WPF
                 Card lastDrawnCard = _match.LastDrawnCard;
                 btnCarta.Background = new ImageBrush(lastDrawnCard.ImageCard);
             }
+            if (_match.DrawnCards.Count == 0)
+            {
+                btnCarta.Visibility = Visibility.Collapsed;
+            }
+            UpdateDrowBtn();
         }
 
         private void btnDeckFishCard_Click(object sender, RoutedEventArgs e)
@@ -160,14 +184,14 @@ namespace Solitaire_Trendy_WPF
                 }
                 lbxImageCulomn0.ItemsSource = null;
                 lbxImageCulomn0.ItemsSource = _match.ColumnsCards[0];
-                UpdateBtnCard();
-                UpdateListboxColumnsCard();
             }
             catch (Exception ex)
             {
                 DeselectListBoxs();
                 MessageBox.Show(ex.Message);
             }
+            UpdateBtnCard();
+            UpdateListboxColumnsCard();
         }
 
         private void btnColumn1_Click(object sender, RoutedEventArgs e)
@@ -201,14 +225,14 @@ namespace Solitaire_Trendy_WPF
                 }
                 lbxImageCulomn1.ItemsSource = null;
                 lbxImageCulomn1.ItemsSource = _match.ColumnsCards[1];
-                UpdateBtnCard();
-                UpdateListboxColumnsCard();
             }
             catch (Exception ex)
             {
                 DeselectListBoxs();
                 MessageBox.Show(ex.Message);
             }
+            UpdateBtnCard();
+            UpdateListboxColumnsCard();
         }
 
         private void btnColumn2_Click(object sender, RoutedEventArgs e)
@@ -242,14 +266,14 @@ namespace Solitaire_Trendy_WPF
                 }
                 lbxImageCulomn2.ItemsSource = null;
                 lbxImageCulomn2.ItemsSource = _match.ColumnsCards[2];
-                UpdateBtnCard();
-                UpdateListboxColumnsCard();
             }
             catch (Exception ex)
             {
                 DeselectListBoxs();
                 MessageBox.Show(ex.Message);
             }
+            UpdateBtnCard();
+            UpdateListboxColumnsCard();
         }
 
         private void btnColumn3_Click(object sender, RoutedEventArgs e)
@@ -283,14 +307,14 @@ namespace Solitaire_Trendy_WPF
                 }
                 lbxImageCulomn3.ItemsSource = null;
                 lbxImageCulomn3.ItemsSource = _match.ColumnsCards[3];
-                UpdateBtnCard();
-                UpdateListboxColumnsCard();
             }
             catch (Exception ex)
             {
                 DeselectListBoxs();
                 MessageBox.Show(ex.Message);
             }
+            UpdateBtnCard();
+            UpdateListboxColumnsCard();
         }
 
         private void btnColumn4_Click(object sender, RoutedEventArgs e)
@@ -324,14 +348,14 @@ namespace Solitaire_Trendy_WPF
                 }
                 lbxImageCulomn4.ItemsSource = null;
                 lbxImageCulomn4.ItemsSource = _match.ColumnsCards[4];
-                UpdateBtnCard();
-                UpdateListboxColumnsCard();
             }
             catch (Exception ex)
             {
                 DeselectListBoxs();
                 MessageBox.Show(ex.Message);
             }
+            UpdateBtnCard();
+            UpdateListboxColumnsCard();
         }
         private void lbxLostFocusColumn0(object sender, RoutedEventArgs e)
         {
@@ -430,14 +454,29 @@ namespace Solitaire_Trendy_WPF
                     insertabelCard = _match.LastDrawnCard;
                     _match.AddCardToBase(insertabelCard);
                 }
-                UpdateBaseCardImage();
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                UpdateBaseCardImage();
             }
+            UpdateBaseCardImage();
+            UpdateListboxColumnsCard();
+        }
+
+        public void Win()
+        {
+            if (_match.IsWin())
+            {
+                FinalPage finalPage = new FinalPage(_match.Name);
+                ((MainWindow)Application.Current.MainWindow).ChangePage(finalPage);
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            GamePage page = new GamePage(_match.Name);
+            ((MainWindow)Application.Current.MainWindow).ChangePage(page);
         }
     }
 }

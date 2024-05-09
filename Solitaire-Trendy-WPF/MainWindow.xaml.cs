@@ -20,10 +20,13 @@ namespace Solitaire_Trendy_WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+        private List<User> users;
         public MainWindow()
         {
             InitializeComponent();
+            ReadFile rd = new ReadFile("source/user.csv");
+            users = rd.ReadUsers();
+
         }
 
         public void ChangePage(Page Page)
@@ -36,7 +39,9 @@ namespace Solitaire_Trendy_WPF
         {
             try
             {
-                GamePage page = new GamePage(txtInputName.Text);
+                string name = txtInputName.Text;
+
+                GamePage page = new GamePage(users);
                 ChangePage(page);
             }
             catch (Exception ex)

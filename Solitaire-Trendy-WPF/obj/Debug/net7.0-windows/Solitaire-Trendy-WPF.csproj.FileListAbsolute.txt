@@ -311,3 +311,5 @@ C:\Users\io\Desktop\informativa\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\De
 C:\Users\io\Desktop\informativa\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Debug\net7.0-windows\Solitaire-Trendy-WPF.pdb
 C:\Users\io\Desktop\informativa\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Debug\net7.0-windows\Solitaire-Trendy-WPF.genruntimeconfig.cache
 C:\Users\io\Desktop\informativa\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Debug\net7.0-windows\ref\Solitaire-Trendy-WPF.dll
+C:\Users\xd\Documents\GitHub\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\bin\Debug\net7.0-windows\source\Cards\9D.jpg
+C:\Users\xd\Documents\GitHub\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\bin\Debug\net7.0-windows\source\Reload.png

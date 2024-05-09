@@ -15,8 +15,8 @@
 
 
         <!-- btn estrai -->
-        <Label Content="Draw :" Height="31" Canvas.Left="26" Canvas.Top="380" Width="65" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
-        <Button x:Name="btnDeckFishCard" Content="" Height="124" Canvas.Left="32" Canvas.Top="407" Width="93" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="White" Click="btnDeckFishCard_Click" BorderThickness="2,2,2,2">
+        <Label x:Name="lblDrawCardsTitle" Content="Draw :" Height="31" Canvas.Left="26" Canvas.Top="380" Width="65" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Button x:Name="btnDrawCardOfDeck" Content="" Height="124" Canvas.Left="32" Canvas.Top="407" Width="93" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="White" Click="btnDeckFishCard_Click" BorderThickness="2,2,2,2">
             <Button.Background>
                 <ImageBrush ImageSource="\source\Cards\RETRO.jpg"/>
             </Button.Background>
@@ -208,7 +208,7 @@
 
 
         <!-- Basi -->
-        <Button x:Name="btnBase0" Content="" Height="124" Canvas.Left="41" Canvas.Top="20" Width="92" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#00DDDDDD" BorderBrush="White" BorderThickness="2,2,2,2" Click="btnBase_Click" >
+        <Button x:Name="btnBase0" Content="" Height="124" Canvas.Left="73" Canvas.Top="20" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#00DDDDDD" BorderBrush="White" BorderThickness="2,2,2,2" Click="btnBase_Click" >
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="8"/>
@@ -216,7 +216,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="btnBase1" Content="" Height="124" Canvas.Left="149" Canvas.Top="20" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#00DDDDDD" BorderBrush="White" BorderThickness="2,2,2,2" Click="btnBase_Click">
+        <Button x:Name="btnBase1" Content="" Height="124" Canvas.Left="170" Canvas.Top="20" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#00DDDDDD" BorderBrush="White" BorderThickness="2,2,2,2" Click="btnBase_Click">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="8"/>
@@ -224,7 +224,7 @@
             </Button.Resources>
         </Button>
 
-        <Button x:Name="btnBase2" Content="" Height="124" Canvas.Left="256" Canvas.Top="20" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#00DDDDDD" BorderBrush="White" BorderThickness="2,2,2,2" Click="btnBase_Click">
+        <Button x:Name="btnBase2" Content="" Height="124" Canvas.Left="267" Canvas.Top="20" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#00DDDDDD" BorderBrush="White" BorderThickness="2,2,2,2" Click="btnBase_Click">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="8"/>
@@ -236,6 +236,17 @@
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="" Height="44" Canvas.Left="10" Canvas.Top="10" Width="44" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#00000000" FontSize="18" Click="Button_Click" BorderBrush="White" Focusable="False" BorderThickness="0,0,0,0">
+            <Button.Background>
+                <ImageBrush ImageSource="\source\Reload.png" TileMode="Tile" Stretch="Uniform"/>
+            </Button.Background>
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="32"/>
                 </Style>
             </Button.Resources>
         </Button>

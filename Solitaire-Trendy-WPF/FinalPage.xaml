@@ -5,10 +5,27 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Solitaire_Trendy_WPF"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="FinalPage">
+      Title="Solitaire Treandy - FinalPage" Height="600" Width="1066">
 
-    <Canvas x:Name="cvnBakground" Background="White">
-        
+    <Canvas x:Name="cvnBakground">
+        <Canvas.Background>
+            <ImageBrush ImageSource="/source/background.png"/>
+        </Canvas.Background>
+        <Label x:Name="lblTitle" Content="You Win" Height="120" Canvas.Left="347" Canvas.Top="180" Width="372" FontSize="90" FontWeight="Bold" FontFamily="Algerian" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Label.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#00000000" Offset="0"/>
+                </RadialGradientBrush>
+            </Label.Background>
+        </Label>
+        <Button Content="Play gain" Height="99" Canvas.Left="420" Canvas.Top="331" Width="226" Background="Transparent" BorderBrush="White" Foreground="White" FontSize="48" BorderThickness="5,5,5,5" Click="Button_Click" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
     </Canvas>
 </Page>

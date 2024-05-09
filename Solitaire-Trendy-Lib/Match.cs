@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.Common;
 using System.Data.SqlTypes;
 using System.Linq;
+using System.Security.RightsManagement;
 using System.Text;
 
 namespace Solitaire_Trendy_WPF
@@ -10,7 +11,7 @@ namespace Solitaire_Trendy_WPF
     public class Match
     {
         private Deck _deck;
-        private string _name;
+        private User _user;
         private List<Card>[] _columnsCards;
         private List<Card>[] _basesCards;
         private List<Card> _drawnCards;
@@ -18,19 +19,14 @@ namespace Solitaire_Trendy_WPF
 
         public string Name
         {
-            get { return _name; }
-            set
-            {
-                if (value == string.Empty /*|| value.Length <= 3*/) throw new ArgumentException("the name is invalid");
-                _name = value;
-            }
+            get { return _user.Name; }
         }
 
         public Card LastDrawnCard
         {
             get
             {
-                if (_drawnCards.Count <= 0) throw new ArgumentOutOfRangeException("there isn't drawn card");
+                if (_drawnCards.Count == 0) throw new ArgumentOutOfRangeException("there isn't drawn card");
                 return _drawnCards[_drawnCards.Count -1]; }
         }
 
@@ -49,13 +45,18 @@ namespace Solitaire_Trendy_WPF
             get { return _drawnCards; }
         }
 
+        public List<Card> Deck
+        {
+            get { return _deck.Cards; }
+        }
+
         public List<Card> CardsOfColumnX(int ColumnX)
         {
             return _columnsCards[ColumnX];
         }
-        public Match(string name)
+        public Match(User user)
         {
-            Name = name;
+            _user = user;
             _deck = new Deck();
             _drawnCards = new List<Card>();
             _columnsCards = new List<Card>[5];
@@ -106,7 +107,7 @@ namespace Solitaire_Trendy_WPF
             Card extractedCard = _deck.DrawnFirstCard;
             if (IsInsertableCardOnBase(extractedCard))
             {
-                AddTobase(extractedCard);
+                _basesCards[extractedCard.TypeSuitToInt].Add(extractedCard);
                 isAddedToBase = true;
             }
             else
@@ -116,15 +117,7 @@ namespace Solitaire_Trendy_WPF
             extractedCard.UncoverImgCard();
             return isAddedToBase;
         }
-        /// <summary>
-        /// l'indice delle basi è fisso e corrisponde al valore del seme
-        /// </summary>
-        /// <param name="card"></param>
-        private void AddTobase(Card card)
-        {
-            _basesCards[card.TypeSuitToInt].Add(card);
-        }
-
+        
         public bool IsInsertableCardOnBase(Card newCard)
         {
             int baseValue = newCard.TypeSuitToInt;
@@ -177,7 +170,9 @@ namespace Solitaire_Trendy_WPF
         {
             if (card.imagePathCard == new Uri(@"source/Cards/RETRO.jpg", UriKind.Relative)) throw new ArgumentException("you can't insert coverde card to base");
             if (IsInsertableCardOnBase(card) == false) throw new ArgumentException("you can't insert this card in the base");
-            AddTobase(card);
+            
+            _basesCards[card.TypeSuitToInt].Add(card);
+            
             if (_drawnCards.Count > 0 && card == LastDrawnCard)
             {
                 _drawnCards.Remove(LastDrawnCard);
@@ -197,40 +192,43 @@ namespace Solitaire_Trendy_WPF
                 fromColumnX == toColumnX) throw new ArgumentOutOfRangeException("the value of column x is invalid");
 
             if (card.imagePathCard == new Uri(@"source/Cards/RETRO.jpg", UriKind.Relative)) throw new ArgumentException("you can't insert coverde card to base");
+            
+            if (IsIsertableCardOnColumn(toColumnX, card) == false) throw new ArgumentOutOfRangeException("card can't be add in the column");
 
-            if (_columnsCards[fromColumnX].Contains(card) && 
-                !_columnsCards[toColumnX].Contains(card))
+            // se l'ulima carta della colonna è uguale alla carta selezionata allora la sposto
+            if (_columnsCards[fromColumnX][_columnsCards[fromColumnX].Count - 1] == card)
             {
-                if (IsIsertableCardOnColumn(toColumnX, card) == false) throw new ArgumentOutOfRangeException("card can't be add in the column");
-
-                // se l'ulima carta della colonna è uguale alla carta selezionata allora la sposto
-                if (_columnsCards[fromColumnX][_columnsCards[fromColumnX].Count - 1] == card)
+                _columnsCards[fromColumnX].Remove(card);
+                if (_columnsCards[fromColumnX].Count > 0)
                 {
-                    _columnsCards[fromColumnX].Remove(card);
-                    if (_columnsCards[fromColumnX].Count > 0)
-                    {
-                        _columnsCards[fromColumnX][_columnsCards[fromColumnX].Count -1].UncoverImgCard();
-                    }
-                    _columnsCards[toColumnX].Add(card);
+                    _columnsCards[fromColumnX][_columnsCards[fromColumnX].Count - 1].UncoverImgCard();
                 }
-                else // se invece la carta selezionata non è l'ultima sposto anche tutte le sucessive
-                {
-                    int baseIndexCards = _columnsCards[fromColumnX].IndexOf(card);
-                    if (baseIndexCards < _columnsCards[fromColumnX].Count)
-                    {
-                        int nCard = _columnsCards[fromColumnX].Count;
-                        for (int i = baseIndexCards; i < nCard; i++)
-                        {
-                            Card cardToMove = _columnsCards[fromColumnX][i];
-                            _columnsCards[fromColumnX].Remove(cardToMove);
-                            _columnsCards[toColumnX].Add(cardToMove);
-                        }
-                    }
-                    else throw new ArgumentOutOfRangeException("card index is invalid");
-
-                }
+                _columnsCards[toColumnX].Add(card);
             }
-            else throw new ArgumentOutOfRangeException("card isn't in the columns");
+            else // se invece la carta selezionata non è l'ultima sposto anche tutte le sucessive
+            {
+                int baseIndexCards = _columnsCards[fromColumnX].IndexOf(card);
+                
+                if (baseIndexCards < _columnsCards[fromColumnX].Count)
+                {
+                    int nCard = _columnsCards[fromColumnX].Count - baseIndexCards;
+
+                    for (int i = 0; i < nCard; i++)
+                    {
+                        Card cardToMove = _columnsCards[fromColumnX][baseIndexCards];
+                        _columnsCards[fromColumnX].Remove(cardToMove);
+                        _columnsCards[toColumnX].Add(cardToMove);
+                    }
+
+                    if (_columnsCards[fromColumnX][_columnsCards[fromColumnX].Count -1].imagePathCard == new Uri(@"source/Cards/RETRO.jpg", UriKind.Relative))
+                    {
+                        _columnsCards[fromColumnX][_columnsCards[fromColumnX].Count - 1].UncoverImgCard();
+                    }
+                }
+                else throw new ArgumentOutOfRangeException("card index is invalid");
+
+            }
+            //else throw new ArgumentOutOfRangeException("card isn't in the columns");
 
         }
 
@@ -239,7 +237,8 @@ namespace Solitaire_Trendy_WPF
             if (_columnsCards[xColumn].Count != 0)
             {
                 Card previousCard = _columnsCards[xColumn][_columnsCards[xColumn].Count - 1];
-                TypeValue nextValueCard = (TypeValue)previousCard.TypeValueToInt - 1;
+                TypeValue nextValueCard = (TypeValue)(previousCard.TypeValueToInt - 1);
+
                 if (previousCard.Suit != card.Suit && card.Value == nextValueCard)
                 {
                     return true;
@@ -263,6 +262,7 @@ namespace Solitaire_Trendy_WPF
                     break;
                 }
             }
+            _user.AddScorPoint();
             return isWin;
         }
         /*
