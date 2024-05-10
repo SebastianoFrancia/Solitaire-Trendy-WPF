@@ -22,11 +22,11 @@ namespace Solitaire_Trendy_WPF
     public partial class GamePage : Page
     {
         public Match _match;
-        public GamePage(string nome)
+        public GamePage()
         {
             InitializeComponent();
             btnCarta.Visibility = Visibility.Hidden;
-            _match = new Match(nome);
+            _match = new Match();
 
             UpdateListboxColumnsCard();
             UpdateBaseCardImage();
@@ -180,7 +180,6 @@ namespace Solitaire_Trendy_WPF
                 else
                 {
                     _match.MoveLastDrawnCardsToColumnX(0);
-                    btnCarta.Background = new ImageBrush(_match.LastDrawnCard.ImageCard);
                 }
                 lbxImageCulomn0.ItemsSource = null;
                 lbxImageCulomn0.ItemsSource = _match.ColumnsCards[0];
@@ -221,7 +220,6 @@ namespace Solitaire_Trendy_WPF
                 else
                 {
                     _match.MoveLastDrawnCardsToColumnX(1);
-                    btnCarta.Background = new ImageBrush(_match.LastDrawnCard.ImageCard);
                 }
                 lbxImageCulomn1.ItemsSource = null;
                 lbxImageCulomn1.ItemsSource = _match.ColumnsCards[1];
@@ -262,7 +260,6 @@ namespace Solitaire_Trendy_WPF
                 else
                 {
                     _match.MoveLastDrawnCardsToColumnX(2);
-                    btnCarta.Background = new ImageBrush(_match.LastDrawnCard.ImageCard);
                 }
                 lbxImageCulomn2.ItemsSource = null;
                 lbxImageCulomn2.ItemsSource = _match.ColumnsCards[2];
@@ -303,7 +300,6 @@ namespace Solitaire_Trendy_WPF
                 else
                 {
                     _match.MoveLastDrawnCardsToColumnX(3);
-                    btnCarta.Background = new ImageBrush(_match.LastDrawnCard.ImageCard);
                 }
                 lbxImageCulomn3.ItemsSource = null;
                 lbxImageCulomn3.ItemsSource = _match.ColumnsCards[3];
@@ -344,7 +340,6 @@ namespace Solitaire_Trendy_WPF
                 else
                 {
                     _match.MoveLastDrawnCardsToColumnX(4);
-                    btnCarta.Background = new ImageBrush(_match.LastDrawnCard.ImageCard);
                 }
                 lbxImageCulomn4.ItemsSource = null;
                 lbxImageCulomn4.ItemsSource = _match.ColumnsCards[4];
@@ -468,14 +463,14 @@ namespace Solitaire_Trendy_WPF
         {
             if (_match.IsWin())
             {
-                FinalPage finalPage = new FinalPage(_match.Name);
+                FinalPage finalPage = new FinalPage();
                 ((MainWindow)Application.Current.MainWindow).ChangePage(finalPage);
             }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            GamePage page = new GamePage(_match.Name);
+            GamePage page = new GamePage();
             ((MainWindow)Application.Current.MainWindow).ChangePage(page);
         }
     }

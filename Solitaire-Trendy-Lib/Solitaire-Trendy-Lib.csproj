@@ -48,9 +48,6 @@
     <Compile Include="Deck.cs" />
     <Compile Include="Match.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReadFile.cs" />
-    <Compile Include="User.cs" />
-    <Compile Include="WriteFile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

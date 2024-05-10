@@ -11,23 +11,17 @@ namespace Solitaire_Trendy_WPF
     public class Match
     {
         private Deck _deck;
-        private User _user;
         private List<Card>[] _columnsCards;
         private List<Card>[] _basesCards;
         private List<Card> _drawnCards;
-
-
-        public string Name
-        {
-            get { return _user.Name; }
-        }
 
         public Card LastDrawnCard
         {
             get
             {
                 if (_drawnCards.Count == 0) throw new ArgumentOutOfRangeException("there isn't drawn card");
-                return _drawnCards[_drawnCards.Count -1]; }
+                return _drawnCards[_drawnCards.Count -1]; 
+            }
         }
 
         public List<Card>[] ColumnsCards
@@ -54,9 +48,8 @@ namespace Solitaire_Trendy_WPF
         {
             return _columnsCards[ColumnX];
         }
-        public Match(User user)
+        public Match()
         {
-            _user = user;
             _deck = new Deck();
             _drawnCards = new List<Card>();
             _columnsCards = new List<Card>[5];
@@ -157,8 +150,8 @@ namespace Solitaire_Trendy_WPF
             if (_columnsCards[columnX].Contains(card) == false) throw new ArgumentException("the card isn't contains in the column X");
             if (_columnsCards[columnX][_columnsCards[columnX].Count - 1] != card) throw new ArgumentException("you can only add the last card of the column to the base");
 
-            _columnsCards[columnX].Remove(card);
             AddCardToBase(card);
+            _columnsCards[columnX].Remove(card);
             if (_columnsCards[columnX].Count > 0 &&
                 _columnsCards[columnX][_columnsCards[columnX].Count - 1].imagePathCard == new Uri(@"source/Cards/RETRO.jpg", UriKind.Relative))
             {
@@ -254,24 +247,16 @@ namespace Solitaire_Trendy_WPF
         public bool IsWin()
         {
             bool isWin = true;
-            for(int i=0; i<_basesCards.Length;i++)
+            for (int i = 0; i < _basesCards.Length; i++)
             {
                 if (_basesCards[i].Count != 10)
                 {
-                    isWin = false ; 
+                    isWin = false;
                     break;
                 }
             }
-            _user.AddScorPoint();
             return isWin;
         }
-        /*
-        public bool IsLost()
-        {
-            if
-        }*/
-
-        
 
     }
 }

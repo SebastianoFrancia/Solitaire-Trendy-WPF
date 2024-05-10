@@ -1,20 +1,20 @@
 ﻿Solitaire-Trendy-WPF
-1.0.0.0
+
 
 winexe
 C#
 .cs
-C:\Users\xd\Documents\GitHub\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Debug\net7.0-windows\
+C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Debug\net7.0-windows\
 Solitaire_Trendy_WPF
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\xd\Documents\GitHub\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\App.xaml
+C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\App.xaml
 3112566092
 43-1989146103
-7-931793979
-199870697797
+51990673674
+199-557357675
 FinalPage.xaml;GamePage.xaml;MainWindow.xaml;
 
-True
+False
 

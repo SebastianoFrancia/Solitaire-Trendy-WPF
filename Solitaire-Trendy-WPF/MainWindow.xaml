@@ -11,14 +11,13 @@
         <Canvas.Background>
             <ImageBrush ImageSource="/source/background.png"/>
         </Canvas.Background>
-        <Button x:Name="btnStart" Content="Start" Height="78" Canvas.Left="449" Canvas.Top="325" Width="162" FontSize="48" Background="{x:Null}" BorderBrush="White" BorderThickness="5,5,5,5" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Padding="3,3,3,3" Click="btnStart_Click">
+        <Button x:Name="btnStart" Content="Start" Height="101" Canvas.Left="428" Canvas.Top="292" Width="210" FontSize="48" Background="{x:Null}" BorderBrush="White" BorderThickness="5,5,5,5" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="3,3,3,3" Click="btnStart_Click">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="8"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <Label x:Name="lblName" Content="Name:" Height="30" Canvas.Left="426" Canvas.Top="226" Width="144" BorderThickness="2,2,2.9,2" Foreground="White" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top" Padding="0,0,0,0"/>
         <Label x:Name="lblTitle" Content="Solitaire Trendy" Height="120" Canvas.Left="107" Canvas.Top="26" Width="846" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="90" FontWeight="Bold" FontFamily="Algerian" Foreground="White">
             <Label.Background>
                 <RadialGradientBrush>
@@ -27,14 +26,6 @@
                 </RadialGradientBrush>
             </Label.Background>
         </Label>
-        <TextBox x:Name="txtInputName" Height="44" Canvas.Left="426" TextWrapping="Wrap" Canvas.Top="259" Width="208" BorderBrush="White" Background="{x:Null}" HorizontalContentAlignment="Center" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" BorderThickness="5,5,5,4.6">
-            <TextBox.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="8"/>
-                </Style>
-            </TextBox.Resources>
-        </TextBox>
-        <Canvas Height="584" Width="1066"/>
 
 
     </Canvas>
