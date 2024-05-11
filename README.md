@@ -1,7 +1,7 @@
 # Solitaire Trendy
 solitaire card game, programme written in C# and WPF graphics                                                                                                     
 ## How to Play:
-<video width="1066" height="600" controls>
+<video width="600" height="350" controls>
   <source src=".Source\2024-05-11 18-19-03.mp4" type="video/mp4">
 </video>
 
@@ -14,7 +14,15 @@ It will be necessary to move the last card of the deck that will be visible in t
 If one of the columns is empty, you can place any card or ladder (in descending order). 
 
 ## How to Install:
-XD
+First install [DotNet Framework](https://dotnet.microsoft.com/en-us/download)
+
+| Requirement |             |
+|-------------|-------------|
+| Processor   | 	1 GHz     |
+| RAM	        |   512 MB    |
+| Minimum disk space |	4.5 GB |
+### Install the game
+download the .zip portable [](https://github.com/SebastianoFrancia/Solitaire-Trendy-WPF/releases)
 
 ### developers:
 [Sebastiano Francia](https://github.com/SebastianoFrancia)
