@@ -6,7 +6,7 @@ using System.Linq;
 using System.Security.RightsManagement;
 using System.Text;
 
-namespace Solitaire_Trendy_WPF
+namespace Solitaire_Trendy_LIB
 {
     public class Match
     {
@@ -213,9 +213,12 @@ namespace Solitaire_Trendy_WPF
                         _columnsCards[toColumnX].Add(cardToMove);
                     }
 
-                    if (_columnsCards[fromColumnX][_columnsCards[fromColumnX].Count -1].imagePathCard == new Uri(@"source/Cards/RETRO.jpg", UriKind.Relative))
+                    if (_columnsCards[fromColumnX].Count > 0)
                     {
-                        _columnsCards[fromColumnX][_columnsCards[fromColumnX].Count - 1].UncoverImgCard();
+                        if (_columnsCards[fromColumnX][_columnsCards[fromColumnX].Count - 1].imagePathCard == new Uri(@"source/Cards/RETRO.jpg", UriKind.Relative))
+                        {
+                            _columnsCards[fromColumnX][_columnsCards[fromColumnX].Count - 1].UncoverImgCard();
+                        }
                     }
                 }
                 else throw new ArgumentOutOfRangeException("card index is invalid");
@@ -239,7 +242,8 @@ namespace Solitaire_Trendy_WPF
             }
             else
             {
-                if (card.Value == TypeValue.king) return true;
+                return true;
+                //if (card.Value == TypeValue.king) return true;
             }
             return false;
         }

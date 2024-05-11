@@ -16,7 +16,7 @@
 
         <!-- btn estrai -->
         <Label x:Name="lblDrawCardsTitle" Content="Draw :" Height="31" Canvas.Left="26" Canvas.Top="380" Width="65" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
-        <Button x:Name="btnDrawCardOfDeck" Content="" Height="124" Canvas.Left="32" Canvas.Top="407" Width="93" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="White" Click="btnDeckFishCard_Click" BorderThickness="2,2,2,2">
+        <Button x:Name="btnDrawCardOfDeck" Content="" Height="124" Canvas.Left="32" Canvas.Top="407" Width="93" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="White" Click="btnDrawDeckCard_Click" BorderThickness="2,2,2,2">
             <Button.Background>
                 <ImageBrush ImageSource="\source\Cards\RETRO.jpg"/>
             </Button.Background>
@@ -240,7 +240,7 @@
             </Button.Resources>
         </Button>
 
-        <Button Content="" Height="44" Canvas.Left="10" Canvas.Top="10" Width="44" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#00000000" FontSize="18" Click="Button_Click" BorderBrush="White" Focusable="False" BorderThickness="0,0,0,0">
+        <Button Content="" Height="44" Canvas.Left="10" Canvas.Top="10" Width="44" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}" FontSize="18" Click="Button_Click" BorderBrush="White" Focusable="False" BorderThickness="0,0,0,0" OpacityMask="#FF9E3B3B">
             <Button.Background>
                 <ImageBrush ImageSource="\source\Reload.png" TileMode="Tile" Stretch="Uniform"/>
             </Button.Background>

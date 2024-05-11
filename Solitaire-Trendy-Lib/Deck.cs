@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Solitaire_Trendy_WPF
+namespace Solitaire_Trendy_LIB
 {
     public class Deck
     {

@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Xml.Linq;
+using Solitaire_Trendy_LIB;
 
 namespace Solitaire_Trendy_WPF
 {
@@ -113,10 +114,11 @@ namespace Solitaire_Trendy_WPF
             UpdateDrowBtn();
         }
 
-        private void btnDeckFishCard_Click(object sender, RoutedEventArgs e)
+        private void btnDrawDeckCard_Click(object sender, RoutedEventArgs e)
         {
             try
             {
+                UpdateDrowBtn();
                 bool isAddedToBase = _match.DrawCard();
                 btnCarta.Visibility = Visibility.Visible;
 

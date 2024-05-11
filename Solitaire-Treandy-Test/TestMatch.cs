@@ -1,9 +1,9 @@
-﻿using Solitaire_Trendy_WPF;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Solitaire_Trendy_LIB;
 
 namespace Solitaire_Treandy_Test
 {

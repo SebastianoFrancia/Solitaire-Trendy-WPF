@@ -11,7 +11,7 @@
         <Canvas.Background>
             <ImageBrush ImageSource="/source/background.png"/>
         </Canvas.Background>
-        <Button x:Name="btnStart" Content="Start" Height="101" Canvas.Left="428" Canvas.Top="292" Width="210" FontSize="48" Background="{x:Null}" BorderBrush="White" BorderThickness="5,5,5,5" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="3,3,3,3" Click="btnStart_Click">
+        <Button x:Name="btnStart" Content="Start" Height="101" Canvas.Left="428" Canvas.Top="292" Width="210" FontSize="48" Background="{x:Null}" BorderBrush="White" BorderThickness="5,5,5,5" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Padding="3,3,3,3" Click="btnStart_Click">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="8"/>

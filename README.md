@@ -1,6 +1,10 @@
 # Solitaire Trendy
 solitaire card game, programme written in C# and WPF graphics                                                                                                     
 ## How to Play:
+<video width="1066" height="600" controls>
+  <source src=".Source\2024-05-11 18-19-03.mp4" type="video/mp4">
+</video>
+
 
 ### 🃏 Rules of the game:
 The game is played with an Italian card deck (40 cards: Clubs, Swords, Dinars, Cups).

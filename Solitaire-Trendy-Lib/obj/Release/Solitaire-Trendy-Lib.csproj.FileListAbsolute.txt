@@ -1,0 +1,6 @@
+C:\Users\xd\Documents\GitHub\Solitaire-Trendy-WPF\Solitaire-Trendy-Lib\bin\Release\Solitaire-Trendy-Lib.dll
+C:\Users\xd\Documents\GitHub\Solitaire-Trendy-WPF\Solitaire-Trendy-Lib\bin\Release\Solitaire-Trendy-Lib.pdb
+C:\Users\xd\Documents\GitHub\Solitaire-Trendy-WPF\Solitaire-Trendy-Lib\obj\Release\Solitaire-Trendy-Lib.csproj.AssemblyReference.cache
+C:\Users\xd\Documents\GitHub\Solitaire-Trendy-WPF\Solitaire-Trendy-Lib\obj\Release\Solitaire-Trendy-Lib.csproj.CoreCompileInputs.cache
+C:\Users\xd\Documents\GitHub\Solitaire-Trendy-WPF\Solitaire-Trendy-Lib\obj\Release\Solitaire-Trendy-Lib.dll
+C:\Users\xd\Documents\GitHub\Solitaire-Trendy-WPF\Solitaire-Trendy-Lib\obj\Release\Solitaire-Trendy-Lib.pdb

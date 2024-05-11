@@ -6,7 +6,7 @@ using System.Text;
 using System.Windows.Media.Imaging;
 
 
-namespace Solitaire_Trendy_WPF
+namespace Solitaire_Trendy_LIB
 {   
     public enum TypeSuit
     {

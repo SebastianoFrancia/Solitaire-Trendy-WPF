@@ -6,6 +6,7 @@
     <RootNamespace>Solitaire_Trendy_WPF</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>source\icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -51,6 +52,7 @@
     <None Remove="source\Cards\9C.jpg" />
     <None Remove="source\Cards\9D.jpg" />
     <None Remove="source\Cards\RETRO.jpg" />
+    <None Remove="source\icon.ico" />
     <None Remove="source\Reload.jpg" />
     <None Remove="source\Reload.png" />
   </ItemGroup>
@@ -182,6 +184,7 @@
     <Content Include="source\Cards\RETRO.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="source\icon.ico" />
     <Content Include="source\Reload.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -189,6 +192,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Solitaire-Trendy-Lib\Solitaire-Trendy-Lib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="source\icon.ico">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>
