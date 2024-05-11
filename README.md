@@ -1,20 +1,7 @@
 # Solitaire Trendy
-solitaire card game, programme written in C# and WPF graphics 
-# ⚠️ Work In Progress
-
-```
-██╗    ██╗ ██╗ ██████╗
-██║    ██║ ██║ ██╔══██╗
-██║ █╗ ██║ ██║ ██████╔╝
-██║███╗██║ ██║ ██╔═══╝
-╚███╔███╔╝ ██║ ██║
- ╚══╝╚══╝  ╚═╝ ╚═╝
-```
-
-
-                                                                                                     yoo dawg                             
-
-## how to install:
+solitaire card game, programme written in C# and WPF graphics                                                                                                     
+# How to Play
+## How to Install:
 XD
 ## 🃏 Rules of the game:
 The game is played with an Italian card deck (40 cards: Clubs, Swords, Dinars, Cups).
