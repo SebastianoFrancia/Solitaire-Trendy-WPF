@@ -1,9 +1,7 @@
 # Solitaire Trendy
 solitaire card game, programme written in C# and WPF graphics                                                                                                     
 ## How to Play:
-<video width="600" height="350" controls>
-  <source src=".Source\2024-05-11 18-19-03.mp4" type="video/mp4">
-</video>
+<video controls src=".Source/2024-05-11 18-19-03.mp4" title="Title"></video>
 
 
 ### 🃏 Rules of the game:
