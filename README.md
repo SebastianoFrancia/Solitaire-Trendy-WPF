@@ -14,15 +14,19 @@ It will be necessary to move the last card of the deck that will be visible in t
 If one of the columns is empty, you can place any card or ladder (in descending order). 
 
 ## How to Install:
-First install [DotNet Framework](https://dotnet.microsoft.com/en-us/download)
+1. First install [DotNet Framework](https://dotnet.microsoft.com/en-us/download)
 
 | Requirement |             |
 |-------------|-------------|
 | Processor   | 	1 GHz     |
 | RAM	        |   512 MB    |
 | Minimum disk space |	4.5 GB |
-### Install the game
-download the .zip portable [](https://github.com/SebastianoFrancia/Solitaire-Trendy-WPF/releases)
+
+2. Install the game
+download the .zip portable [releases](https://github.com/SebastianoFrancia/Solitaire-Trendy-WPF/releases)
+
+3. unzip the zip package and run the executable .exe file
+
 
 ### developers:
 [Sebastiano Francia](https://github.com/SebastianoFrancia)
