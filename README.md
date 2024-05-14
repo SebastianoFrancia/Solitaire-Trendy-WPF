@@ -23,13 +23,13 @@ If one of the columns is empty, you can place any card or ladder (in descending 
 | Minimum disk space |	4.5 GB |
 
 ### one click install
-2. Download [intaller](https://github.com/SebastianoFrancia/Solitaire-Trendy-WPF/releases/download/main/installer.zip)
+2. Download [intaller](https://github.com/SebastianoFrancia/Solitaire-Trendy-WPF/releases/download/main/installer-Solitaire.zip)
 3. unzip installer.zip
 4. exec  ./installer/setup.exe
 ### Portabel relaese
 
 2. Install the game
-download the .zip portable [portable releases](https://github.com/SebastianoFrancia/Solitaire-Trendy-WPF/releases/download/main/release-portable.zip)
+download the .zip portable [portable releases](https://github.com/SebastianoFrancia/Solitaire-Trendy-WPF/releases/download/main/portable-Solitaire.zip)
 
 3. unzip the zip package and run the executable .exe file
 
