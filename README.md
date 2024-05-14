@@ -15,7 +15,7 @@ If one of the columns is empty, you can place any card or ladder (in descending 
 
 ## How to Install only for Windows:
 ### one click install
-1. Download intaller
+1. Download [intaller](https://github.com/SebastianoFrancia/Solitaire-Trendy-WPF/releases/download/main/installer.zip)
 2. unzip installer.zip
 3. exec  ./installer/setup.exe
 ### Portavel relaese
