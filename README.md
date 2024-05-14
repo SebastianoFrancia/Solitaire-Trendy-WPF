@@ -26,7 +26,7 @@ If one of the columns is empty, you can place any card or ladder (in descending 
 2. Download [intaller](https://github.com/SebastianoFrancia/Solitaire-Trendy-WPF/releases/download/main/installer.zip)
 3. unzip installer.zip
 4. exec  ./installer/setup.exe
-### Portavel relaese
+### Portabel relaese
 
 2. Install the game
 download the .zip portable [portable releases](https://github.com/SebastianoFrancia/Solitaire-Trendy-WPF/releases)
