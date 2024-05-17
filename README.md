@@ -13,7 +13,7 @@ The cards on the right-hand side of the screen are arranged in columns, each of 
 It will be necessary to move the last card of the deck that will be visible in the bases or columns so that the previous card is of a different suit and of a higher value.
 If one of the columns is empty, you can place any card or ladder (in descending order). 
 
-## How to Install only for Windows:
+## How to Install:
 1. First install [DotNet Framework](https://dotnet.microsoft.com/en-us/download)
 
 | Requirement |             |
@@ -22,14 +22,8 @@ If one of the columns is empty, you can place any card or ladder (in descending 
 | RAM	        |   512 MB    |
 | Minimum disk space |	4.5 GB |
 
-### one click install
-2. Download [intaller](https://github.com/SebastianoFrancia/Solitaire-Trendy-WPF/releases/download/main/installer-Solitaire.zip)
-3. unzip installer.zip
-4. exec  ./installer/setup.exe
-### Portabel relaese
-
 2. Install the game
-download the .zip portable [portable releases](https://github.com/SebastianoFrancia/Solitaire-Trendy-WPF/releases/download/main/portable-Solitaire.zip)
+download the .zip portable [releases](https://github.com/SebastianoFrancia/Solitaire-Trendy-WPF/releases)
 
 3. unzip the zip package and run the executable .exe file
 
