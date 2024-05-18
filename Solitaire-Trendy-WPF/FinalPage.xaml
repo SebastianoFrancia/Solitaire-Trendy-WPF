@@ -19,7 +19,7 @@
                 </RadialGradientBrush>
             </Label.Background>
         </Label>
-        <Button Content="Play gain" Height="99" Canvas.Left="420" Canvas.Top="331" Width="226" Background="Transparent" BorderBrush="White" Foreground="White" FontSize="48" BorderThickness="5,5,5,5" Click="Button_Click" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Button Content="Play Again" Height="98" Canvas.Left="415" Canvas.Top="324" Width="236" Background="Transparent" BorderBrush="White" Foreground="White" FontSize="48" BorderThickness="5,5,5,5" Click="Button_Click" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="8"/>

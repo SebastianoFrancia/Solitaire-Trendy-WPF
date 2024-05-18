@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Solitaire-Trendy-WPF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b175cf0f00178e7a156255f27e5ada6497a8535")]
 [assembly: System.Reflection.AssemblyProductAttribute("Solitaire-Trendy-WPF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Solitaire-Trendy-WPF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

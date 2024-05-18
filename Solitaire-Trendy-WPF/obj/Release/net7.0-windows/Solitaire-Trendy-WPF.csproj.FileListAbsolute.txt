@@ -137,13 +137,10 @@ C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\
 C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Release\net7.0-windows\Solitaire-Trendy-WPF.AssemblyInfoInputs.cache
 C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Release\net7.0-windows\Solitaire-Trendy-WPF.AssemblyInfo.cs
 C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Release\net7.0-windows\Solitaire-Trendy-WPF.csproj.CoreCompileInputs.cache
-C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Release\net7.0-windows\Solitaire-Trendy-WPF.csproj.CopyComplete
 C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Release\net7.0-windows\Solitaire-Trendy-WPF.dll
 C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Release\net7.0-windows\refint\Solitaire-Trendy-WPF.dll
 C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Release\net7.0-windows\Solitaire-Trendy-WPF.pdb
 C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Release\net7.0-windows\Solitaire-Trendy-WPF.genruntimeconfig.cache
 C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Release\net7.0-windows\ref\Solitaire-Trendy-WPF.dll
-C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\bin\Release\net7.0-windows\Solitaire-Trendy-WPF.dll.manifest
-C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\bin\Release\net7.0-windows\Solitaire-Trendy-WPF.application
-C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Release\net7.0-windows\Solitaire-Trendy-WPF.dll.manifest
-C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Release\net7.0-windows\Solitaire-Trendy-WPF.application
+C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Release\net7.0-windows\Solitaire-Trendy-WPF.sourcelink.json
+C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Release\net7.0-windows\Solitair.5C1C8951.Up2Date

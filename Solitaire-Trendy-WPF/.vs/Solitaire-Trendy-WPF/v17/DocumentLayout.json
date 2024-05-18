@@ -1,23 +1,31 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\",
+  "WorkspaceRootPath": "C:\\Users\\sebastiano.francia\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CDB81D57-5C66-46A3-8884-C8E5B600D076}|..\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj|c:\\users\\io\\desktop\\informativa\\solitaire-trendy-wpf\\solitaire-trendy-lib\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|c:\\users\\sebastiano.francia\\documents\\solitaire-trendy-wpf\\solitaire-trendy-wpf\\finalpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|solutionrelative:finalpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|c:\\users\\io\\desktop\\informativa\\solitaire-trendy-wpf\\solitaire-trendy-wpf\\gamepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|solutionrelative:gamepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|c:\\users\\sebastiano.francia\\documents\\solitaire-trendy-wpf\\solitaire-trendy-wpf\\finalpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|solutionrelative:finalpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CDB81D57-5C66-46A3-8884-C8E5B600D076}|..\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj|c:\\users\\io\\desktop\\informativa\\solitaire-trendy-wpf\\solitaire-trendy-lib\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|c:\\users\\io\\desktop\\informativa\\solitaire-trendy-wpf\\solitaire-trendy-wpf\\gamepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|c:\\users\\sebastiano.francia\\documents\\solitaire-trendy-wpf\\solitaire-trendy-wpf\\gamepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|solutionrelative:gamepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CDB81D57-5C66-46A3-8884-C8E5B600D076}|..\\Solitaire-Trendy-Lib\\Solitaire-Trendy-Lib.csproj|c:\\users\\io\\desktop\\informativa\\solitaire-trendy-wpf\\solitaire-trendy-lib\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|c:\\users\\sebastiano.francia\\documents\\solitaire-trendy-wpf\\solitaire-trendy-wpf\\gamepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1C2F676-8417-407F-A3E0-C566228DB003}|Solitaire-Trendy-WPF.csproj|solutionrelative:gamepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,72 +35,94 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1057,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Match.cs",
               "DocumentMoniker": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Match.cs",
-              "RelativeDocumentMoniker": "..\\Solitaire-Trendy-Lib\\Match.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Match.cs",
               "ToolTip": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Match.cs",
-              "RelativeToolTip": "..\\Solitaire-Trendy-Lib\\Match.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Match.cs",
               "ViewState": "AQIAAFsAAAAAAAAAAAAWwG0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-05T13:57:04.491Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Deck.cs",
-              "DocumentMoniker": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Deck.cs",
-              "RelativeDocumentMoniker": "..\\Solitaire-Trendy-Lib\\Deck.cs",
-              "ToolTip": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Deck.cs",
-              "RelativeToolTip": "..\\Solitaire-Trendy-Lib\\Deck.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAUwBcAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T14:56:16.063Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Card.cs",
-              "DocumentMoniker": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Card.cs",
-              "RelativeDocumentMoniker": "..\\Solitaire-Trendy-Lib\\Card.cs",
-              "ToolTip": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Card.cs",
-              "RelativeToolTip": "..\\Solitaire-Trendy-Lib\\Card.cs",
-              "ViewState": "AQIAAJIAAAAAAAAAAAAWwJkAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T16:28:22.61Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GamePage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\GamePage.xaml.cs",
-              "RelativeDocumentMoniker": "GamePage.xaml.cs",
-              "ToolTip": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\GamePage.xaml.cs",
-              "RelativeToolTip": "GamePage.xaml.cs",
-              "ViewState": "AQIAAJMBAAAAAAAAAAAuwKIBAAAIAAAA",
+              "Title": "FinalPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\sebastiano.francia\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\FinalPage.xaml.cs",
+              "RelativeDocumentMoniker": "FinalPage.xaml.cs",
+              "ToolTip": "C:\\Users\\sebastiano.francia\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\FinalPage.xaml.cs",
+              "RelativeToolTip": "FinalPage.xaml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAQwB0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T13:54:14.14Z",
+              "WhenOpened": "2024-05-18T09:33:37.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FinalPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sebastiano.francia\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\FinalPage.xaml",
+              "RelativeDocumentMoniker": "FinalPage.xaml",
+              "ToolTip": "C:\\Users\\sebastiano.francia\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\FinalPage.xaml",
+              "RelativeToolTip": "FinalPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-18T09:33:30.11Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Deck.cs",
+              "DocumentMoniker": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Deck.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Deck.cs",
+              "ToolTip": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Deck.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Deck.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAUwBcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T14:56:16.063Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Card.cs",
+              "DocumentMoniker": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Card.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Card.cs",
+              "ToolTip": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Card.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-Lib\\Card.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T16:28:22.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GamePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\sebastiano.francia\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\GamePage.xaml.cs",
+              "RelativeDocumentMoniker": "GamePage.xaml.cs",
+              "ToolTip": "C:\\Users\\sebastiano.francia\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\GamePage.xaml.cs",
+              "RelativeToolTip": "GamePage.xaml.cs",
+              "ViewState": "AQIAAJMBAAAAAAAAAAAuwKIBAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T13:54:14.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "GamePage.xaml",
-              "DocumentMoniker": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\GamePage.xaml",
+              "DocumentMoniker": "C:\\Users\\sebastiano.francia\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\GamePage.xaml",
               "RelativeDocumentMoniker": "GamePage.xaml",
-              "ToolTip": "C:\\Users\\io\\Desktop\\informativa\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\GamePage.xaml",
+              "ToolTip": "C:\\Users\\sebastiano.francia\\Documents\\Solitaire-Trendy-WPF\\Solitaire-Trendy-WPF\\GamePage.xaml",
               "RelativeToolTip": "GamePage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-05T13:53:37.466Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T13:53:37.466Z"
             }
           ]
         }
