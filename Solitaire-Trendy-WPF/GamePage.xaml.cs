@@ -159,6 +159,7 @@ namespace Solitaire_Trendy_WPF
         {
             try
             {
+                lbxExeption.Text = "";
                 if (lbxImageCulomn1.SelectedItem != null)
                 {
                     _match.MoveCardsToColumnX(1, 0, (Card)lbxImageCulomn1.SelectedItem);
@@ -189,7 +190,7 @@ namespace Solitaire_Trendy_WPF
             catch (Exception ex)
             {
                 DeselectListBoxs();
-                MessageBox.Show(ex.Message);
+                lbxExeption.Text = ex.Message;
             }
             UpdateBtnCard();
             UpdateListboxColumnsCard();
@@ -199,6 +200,7 @@ namespace Solitaire_Trendy_WPF
         {
             try
             {
+                lbxExeption.Text = "";
                 if (lbxImageCulomn0.SelectedItem != null)
                 {
                     _match.MoveCardsToColumnX(0, 1, (Card)lbxImageCulomn0.SelectedItem);
@@ -229,7 +231,7 @@ namespace Solitaire_Trendy_WPF
             catch (Exception ex)
             {
                 DeselectListBoxs();
-                MessageBox.Show(ex.Message);
+                lbxExeption.Text = ex.Message;
             }
             UpdateBtnCard();
             UpdateListboxColumnsCard();
@@ -239,6 +241,7 @@ namespace Solitaire_Trendy_WPF
         {
             try
             {
+                lbxExeption.Text = "";
                 if (lbxImageCulomn1.SelectedItem != null)
                 {
                     _match.MoveCardsToColumnX(1, 2, (Card)lbxImageCulomn1.SelectedItem);
@@ -269,7 +272,7 @@ namespace Solitaire_Trendy_WPF
             catch (Exception ex)
             {
                 DeselectListBoxs();
-                MessageBox.Show(ex.Message);
+                lbxExeption.Text = ex.Message;
             }
             UpdateBtnCard();
             UpdateListboxColumnsCard();
@@ -279,6 +282,7 @@ namespace Solitaire_Trendy_WPF
         {
             try
             {
+                lbxExeption.Text = "";
                 if (lbxImageCulomn1.SelectedItem != null)
                 {
                     _match.MoveCardsToColumnX(1, 3, (Card)lbxImageCulomn1.SelectedItem);
@@ -309,7 +313,7 @@ namespace Solitaire_Trendy_WPF
             catch (Exception ex)
             {
                 DeselectListBoxs();
-                MessageBox.Show(ex.Message);
+                lbxExeption.Text = ex.Message;
             }
             UpdateBtnCard();
             UpdateListboxColumnsCard();
@@ -319,6 +323,7 @@ namespace Solitaire_Trendy_WPF
         {
             try
             {
+                lbxExeption.Text = "";
                 if (lbxImageCulomn1.SelectedItem != null)
                 {
                     _match.MoveCardsToColumnX(1, 4, (Card)lbxImageCulomn1.SelectedItem);
@@ -349,7 +354,7 @@ namespace Solitaire_Trendy_WPF
             catch (Exception ex)
             {
                 DeselectListBoxs();
-                MessageBox.Show(ex.Message);
+                lbxExeption.Text = ex.Message;
             }
             UpdateBtnCard();
             UpdateListboxColumnsCard();
@@ -405,6 +410,7 @@ namespace Solitaire_Trendy_WPF
         {
             try
             {
+                lbxExeption.Text = "";
                 Card insertabelCard;
                 if (lbxImageCulomn0.SelectedItem != null)
                 {
@@ -455,7 +461,7 @@ namespace Solitaire_Trendy_WPF
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                lbxExeption.Text = ex.Message;
             }
             UpdateBaseCardImage();
             UpdateListboxColumnsCard();

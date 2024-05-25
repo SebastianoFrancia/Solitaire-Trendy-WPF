@@ -27,7 +27,6 @@ C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\
 C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Debug\net7.0-windows\Solitaire-Trendy-WPF_Content.g.cs
 C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Debug\net7.0-windows\FinalPage.baml
 C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Debug\net7.0-windows\GamePage.baml
-C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Debug\net7.0-windows\Solitaire-Trendy-WPF.csproj.CopyComplete
 C:\Users\daniele.sbrighi\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\bin\Debug\net7.0-windows\Solitaire-Trendy-WPF.exe
 C:\Users\daniele.sbrighi\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\bin\Debug\net7.0-windows\source\background.png
 C:\Users\daniele.sbrighi\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\bin\Debug\net7.0-windows\Solitaire-Trendy-WPF.deps.json
@@ -315,3 +314,5 @@ C:\Users\xd\Documents\GitHub\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\bin\Debug
 C:\Users\xd\Documents\GitHub\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\bin\Debug\net7.0-windows\source\Reload.png
 C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\bin\Debug\net7.0-windows\source\Cards\9D.jpg
 C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\bin\Debug\net7.0-windows\source\Reload.png
+C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Debug\net7.0-windows\Solitaire-Trendy-WPF.sourcelink.json
+C:\Users\sebastiano.francia\Documents\Solitaire-Trendy-WPF\Solitaire-Trendy-WPF\obj\Debug\net7.0-windows\Solitair.5C1C8951.Up2Date

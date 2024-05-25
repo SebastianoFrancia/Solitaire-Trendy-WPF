@@ -250,6 +250,7 @@
                 </Style>
             </Button.Resources>
         </Button>
+        <TextBlock x:Name="lbxExeption" Height="61" Canvas.Left="73" TextAlignment="Center" TextWrapping="Wrap" Canvas.Top="211" Width="383" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontSize="22" FontWeight="Bold"/>
 
 
 
